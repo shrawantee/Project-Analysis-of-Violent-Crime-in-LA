@@ -1,0 +1,12 @@
+“Violent Crime Trend in Los Angeles, CA. From 2010 to 2015.”
+
+Our project is to represent how violent crimes have changed/trended over the 2010-2015 timeframe within Los Angeles. 
+Do a quick comparison against the national trend from the Public Policy Institute of California.
+Source: http://www.ppic.org/publication/crime-trends-in-california/
+
+Taking into consideration the location, type and frequency of each type of crime. 
+Do a comparison on socio-economic and demographic factors per location. Further detail to reflect frequency in age and gender.
+
+The Source of Data for the Crime data set for the city of Los Angeles will be via: https://catalog.data.gov/dataset/crime-data-from-2010-to-present
+
+Violent Crimes are comprised of: In the FBI’s Uniform Crime Reporting (UCR) Program, violent crime is composed of four offenses: murder and nonnegligent manslaughter, forcible rape, robbery, and aggravated assault. Violent crimes are defined in the UCR Program as those offenses which involve force or threat of force.
