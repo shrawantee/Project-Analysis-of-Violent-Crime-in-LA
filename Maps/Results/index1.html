@@ -1,0 +1,3061 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS=false; L_NO_TOUCH=false; L_DISABLE_3D=false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawgit.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+    <style>#map_898edee32e6f4b7fbef8a960984dc820 {
+        position: relative;
+        width: 100.0%;
+        height: 100.0%;
+        left: 0.0%;
+        top: 0.0%;
+        }
+    </style>
+</head>
+<body>    
+    
+    <div class="folium-map" id="map_898edee32e6f4b7fbef8a960984dc820" ></div>
+</body>
+<script>    
+    
+    
+        var bounds = null;
+    
+
+    var map_898edee32e6f4b7fbef8a960984dc820 = L.map(
+        'map_898edee32e6f4b7fbef8a960984dc820', {
+        center: [34.009, -118.2424],
+        zoom: 12,
+        maxBounds: bounds,
+        layers: [],
+        worldCopyJump: false,
+        crs: L.CRS.EPSG3857,
+        zoomControl: true,
+        });
+
+    
+    
+    var tile_layer_f261720647f943929f5242785e047bc4 = L.tileLayer(
+        'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+        {
+        "attribution": null,
+        "detectRetina": false,
+        "maxNativeZoom": 18,
+        "maxZoom": 18,
+        "minZoom": 0,
+        "noWrap": false,
+        "subdomains": "abc"
+}).addTo(map_898edee32e6f4b7fbef8a960984dc820);
+    
+        var marker_266f906b1f4943ac9221bf0065cd047f = L.marker(
+            [33.9638, -118.2575],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_898edee32e6f4b7fbef8a960984dc820);
+        
+    
+
+                var icon_a38716cd30ba4cc4b7f424cf7636665f = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_266f906b1f4943ac9221bf0065cd047f.setIcon(icon_a38716cd30ba4cc4b7f424cf7636665f);
+            
+    
+                var lat_lng_popup_eb8557a124bd4b7babfd91177300073f = L.popup();
+                function latLngPop(e) {
+                    lat_lng_popup_eb8557a124bd4b7babfd91177300073f
+                        .setLatLng(e.latlng)
+                        .setContent("Latitude: " + e.latlng.lat.toFixed(4) +
+                                    "<br>Longitude: " + e.latlng.lng.toFixed(4))
+                        .openOn(map_898edee32e6f4b7fbef8a960984dc820);
+                    }
+                map_898edee32e6f4b7fbef8a960984dc820.on('click', latLngPop);
+            
+    
+        var marker_3466ca1c6bbe4a399f5631e8db7df5b8 = L.marker(
+            [33.961999999999996, -118.2575],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_898edee32e6f4b7fbef8a960984dc820);
+        
+    
+
+                var icon_f2ebbef4f0284236928252b356113aad = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_3466ca1c6bbe4a399f5631e8db7df5b8.setIcon(icon_f2ebbef4f0284236928252b356113aad);
+            
+    
+                var lat_lng_popup_1fa97921188949708f45b969c3626ec9 = L.popup();
+                function latLngPop(e) {
+                    lat_lng_popup_1fa97921188949708f45b969c3626ec9
+                        .setLatLng(e.latlng)
+                        .setContent("Latitude: " + e.latlng.lat.toFixed(4) +
+                                    "<br>Longitude: " + e.latlng.lng.toFixed(4))
+                        .openOn(map_898edee32e6f4b7fbef8a960984dc820);
+                    }
+                map_898edee32e6f4b7fbef8a960984dc820.on('click', latLngPop);
+            
+    
+        var marker_733a47c9258b4862a5607369fdbf7d30 = L.marker(
+            [33.961999999999996, -118.2575],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_898edee32e6f4b7fbef8a960984dc820);
+        
+    
+
+                var icon_8847b5bf6b7848e5a8c7e2824ce6dd67 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_733a47c9258b4862a5607369fdbf7d30.setIcon(icon_8847b5bf6b7848e5a8c7e2824ce6dd67);
+            
+    
+                var lat_lng_popup_9b4cf7082bee42f1a2f128ce34e65796 = L.popup();
+                function latLngPop(e) {
+                    lat_lng_popup_9b4cf7082bee42f1a2f128ce34e65796
+                        .setLatLng(e.latlng)
+                        .setContent("Latitude: " + e.latlng.lat.toFixed(4) +
+                                    "<br>Longitude: " + e.latlng.lng.toFixed(4))
+                        .openOn(map_898edee32e6f4b7fbef8a960984dc820);
+                    }
+                map_898edee32e6f4b7fbef8a960984dc820.on('click', latLngPop);
+            
+    
+        var marker_c8257875a4f04327968e9f93e9134ac9 = L.marker(
+            [33.9638, -118.2586],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_898edee32e6f4b7fbef8a960984dc820);
+        
+    
+
+                var icon_4b652fe1a0fd4fc7b8503841a769d072 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_c8257875a4f04327968e9f93e9134ac9.setIcon(icon_4b652fe1a0fd4fc7b8503841a769d072);
+            
+    
+                var lat_lng_popup_aa9b3acc2e4a427b81442dccc1b93ba5 = L.popup();
+                function latLngPop(e) {
+                    lat_lng_popup_aa9b3acc2e4a427b81442dccc1b93ba5
+                        .setLatLng(e.latlng)
+                        .setContent("Latitude: " + e.latlng.lat.toFixed(4) +
+                                    "<br>Longitude: " + e.latlng.lng.toFixed(4))
+                        .openOn(map_898edee32e6f4b7fbef8a960984dc820);
+                    }
+                map_898edee32e6f4b7fbef8a960984dc820.on('click', latLngPop);
+            
+    
+        var marker_a4424f31f37141c893f40466738b9b6b = L.marker(
+            [33.9857, -118.2628],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_898edee32e6f4b7fbef8a960984dc820);
+        
+    
+
+                var icon_86bbc628daec48dd887c68917d183997 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_a4424f31f37141c893f40466738b9b6b.setIcon(icon_86bbc628daec48dd887c68917d183997);
+            
+    
+                var lat_lng_popup_5344ab91dc8446b186f733119f721ad3 = L.popup();
+                function latLngPop(e) {
+                    lat_lng_popup_5344ab91dc8446b186f733119f721ad3
+                        .setLatLng(e.latlng)
+                        .setContent("Latitude: " + e.latlng.lat.toFixed(4) +
+                                    "<br>Longitude: " + e.latlng.lng.toFixed(4))
+                        .openOn(map_898edee32e6f4b7fbef8a960984dc820);
+                    }
+                map_898edee32e6f4b7fbef8a960984dc820.on('click', latLngPop);
+            
+    
+        var marker_fc58608118c2474aa2d92f01555002d6 = L.marker(
+            [33.9857, -118.2628],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_898edee32e6f4b7fbef8a960984dc820);
+        
+    
+
+                var icon_87d82faabdf94472b823af4b2f7a6f47 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_fc58608118c2474aa2d92f01555002d6.setIcon(icon_87d82faabdf94472b823af4b2f7a6f47);
+            
+    
+                var lat_lng_popup_80b8616a2c7740e696d37b545aacb38e = L.popup();
+                function latLngPop(e) {
+                    lat_lng_popup_80b8616a2c7740e696d37b545aacb38e
+                        .setLatLng(e.latlng)
+                        .setContent("Latitude: " + e.latlng.lat.toFixed(4) +
+                                    "<br>Longitude: " + e.latlng.lng.toFixed(4))
+                        .openOn(map_898edee32e6f4b7fbef8a960984dc820);
+                    }
+                map_898edee32e6f4b7fbef8a960984dc820.on('click', latLngPop);
+            
+    
+        var marker_161c398c7f5c4e51a6d12bd2b5f064db = L.marker(
+            [33.9845, -118.2589],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_898edee32e6f4b7fbef8a960984dc820);
+        
+    
+
+                var icon_4c19b5eec71f4399a02dd1d690f8204b = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_161c398c7f5c4e51a6d12bd2b5f064db.setIcon(icon_4c19b5eec71f4399a02dd1d690f8204b);
+            
+    
+                var lat_lng_popup_e1176d3667334f30a5e9b0077c6b27de = L.popup();
+                function latLngPop(e) {
+                    lat_lng_popup_e1176d3667334f30a5e9b0077c6b27de
+                        .setLatLng(e.latlng)
+                        .setContent("Latitude: " + e.latlng.lat.toFixed(4) +
+                                    "<br>Longitude: " + e.latlng.lng.toFixed(4))
+                        .openOn(map_898edee32e6f4b7fbef8a960984dc820);
+                    }
+                map_898edee32e6f4b7fbef8a960984dc820.on('click', latLngPop);
+            
+    
+        var marker_3ff6be501eff40389e89aab3edb9f89c = L.marker(
+            [33.9712, -118.2564],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_898edee32e6f4b7fbef8a960984dc820);
+        
+    
+
+                var icon_5bf1043fae5c457db3852bf293720a16 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_3ff6be501eff40389e89aab3edb9f89c.setIcon(icon_5bf1043fae5c457db3852bf293720a16);
+            
+    
+                var lat_lng_popup_adfd63371427400a875466175351ffd6 = L.popup();
+                function latLngPop(e) {
+                    lat_lng_popup_adfd63371427400a875466175351ffd6
+                        .setLatLng(e.latlng)
+                        .setContent("Latitude: " + e.latlng.lat.toFixed(4) +
+                                    "<br>Longitude: " + e.latlng.lng.toFixed(4))
+                        .openOn(map_898edee32e6f4b7fbef8a960984dc820);
+                    }
+                map_898edee32e6f4b7fbef8a960984dc820.on('click', latLngPop);
+            
+    
+        var marker_b4c2ec78aa7c48eb9f8582def7487e89 = L.marker(
+            [33.973, -118.2608],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_898edee32e6f4b7fbef8a960984dc820);
+        
+    
+
+                var icon_579a0386940741d1ad3a54ae5335b0df = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_b4c2ec78aa7c48eb9f8582def7487e89.setIcon(icon_579a0386940741d1ad3a54ae5335b0df);
+            
+    
+                var lat_lng_popup_95801119edef4733be51ade392b3491c = L.popup();
+                function latLngPop(e) {
+                    lat_lng_popup_95801119edef4733be51ade392b3491c
+                        .setLatLng(e.latlng)
+                        .setContent("Latitude: " + e.latlng.lat.toFixed(4) +
+                                    "<br>Longitude: " + e.latlng.lng.toFixed(4))
+                        .openOn(map_898edee32e6f4b7fbef8a960984dc820);
+                    }
+                map_898edee32e6f4b7fbef8a960984dc820.on('click', latLngPop);
+            
+    
+        var marker_6217f210fcc54722b8ac985ecf1870f1 = L.marker(
+            [33.9712, -118.2564],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_898edee32e6f4b7fbef8a960984dc820);
+        
+    
+
+                var icon_2d2eaee2f89a42acb04d3784b68fbed0 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_6217f210fcc54722b8ac985ecf1870f1.setIcon(icon_2d2eaee2f89a42acb04d3784b68fbed0);
+            
+    
+                var lat_lng_popup_c755224a28e54c95a07e4912a97b84b8 = L.popup();
+                function latLngPop(e) {
+                    lat_lng_popup_c755224a28e54c95a07e4912a97b84b8
+                        .setLatLng(e.latlng)
+                        .setContent("Latitude: " + e.latlng.lat.toFixed(4) +
+                                    "<br>Longitude: " + e.latlng.lng.toFixed(4))
+                        .openOn(map_898edee32e6f4b7fbef8a960984dc820);
+                    }
+                map_898edee32e6f4b7fbef8a960984dc820.on('click', latLngPop);
+            
+    
+        var marker_994e534cd7bc4585aeefd1b80f7f5127 = L.marker(
+            [33.973, -118.2575],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_898edee32e6f4b7fbef8a960984dc820);
+        
+    
+
+                var icon_3be85691512b4321ba975948b118e6d9 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_994e534cd7bc4585aeefd1b80f7f5127.setIcon(icon_3be85691512b4321ba975948b118e6d9);
+            
+    
+                var lat_lng_popup_c61d22c82d264e81a93a33b5cc70ec07 = L.popup();
+                function latLngPop(e) {
+                    lat_lng_popup_c61d22c82d264e81a93a33b5cc70ec07
+                        .setLatLng(e.latlng)
+                        .setContent("Latitude: " + e.latlng.lat.toFixed(4) +
+                                    "<br>Longitude: " + e.latlng.lng.toFixed(4))
+                        .openOn(map_898edee32e6f4b7fbef8a960984dc820);
+                    }
+                map_898edee32e6f4b7fbef8a960984dc820.on('click', latLngPop);
+            
+    
+        var marker_15394f95e0d149bfb1b4a423da0eca66 = L.marker(
+            [33.9638, -118.2586],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_898edee32e6f4b7fbef8a960984dc820);
+        
+    
+
+                var icon_03957d71b13d49cf9455172f36c7bf6e = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_15394f95e0d149bfb1b4a423da0eca66.setIcon(icon_03957d71b13d49cf9455172f36c7bf6e);
+            
+    
+                var lat_lng_popup_bf677173a66e447bb59cd0e2b1b5c7bb = L.popup();
+                function latLngPop(e) {
+                    lat_lng_popup_bf677173a66e447bb59cd0e2b1b5c7bb
+                        .setLatLng(e.latlng)
+                        .setContent("Latitude: " + e.latlng.lat.toFixed(4) +
+                                    "<br>Longitude: " + e.latlng.lng.toFixed(4))
+                        .openOn(map_898edee32e6f4b7fbef8a960984dc820);
+                    }
+                map_898edee32e6f4b7fbef8a960984dc820.on('click', latLngPop);
+            
+    
+        var marker_a36977cdda0d4589abb5f6bc1dc35ad0 = L.marker(
+            [33.961999999999996, -118.2575],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_898edee32e6f4b7fbef8a960984dc820);
+        
+    
+
+                var icon_acc16507e5b34680a3547e35178abc22 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_a36977cdda0d4589abb5f6bc1dc35ad0.setIcon(icon_acc16507e5b34680a3547e35178abc22);
+            
+    
+                var lat_lng_popup_81dae7b91dd04d3f9de80081417d0963 = L.popup();
+                function latLngPop(e) {
+                    lat_lng_popup_81dae7b91dd04d3f9de80081417d0963
+                        .setLatLng(e.latlng)
+                        .setContent("Latitude: " + e.latlng.lat.toFixed(4) +
+                                    "<br>Longitude: " + e.latlng.lng.toFixed(4))
+                        .openOn(map_898edee32e6f4b7fbef8a960984dc820);
+                    }
+                map_898edee32e6f4b7fbef8a960984dc820.on('click', latLngPop);
+            
+    
+        var marker_12260f4fe4d04dccb506360796e72341 = L.marker(
+            [33.973, -118.2608],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_898edee32e6f4b7fbef8a960984dc820);
+        
+    
+
+                var icon_2b099fa6a25e42e9b1b820171a2410b3 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_12260f4fe4d04dccb506360796e72341.setIcon(icon_2b099fa6a25e42e9b1b820171a2410b3);
+            
+    
+                var lat_lng_popup_599f185c597a42df867f904b18d6d6a7 = L.popup();
+                function latLngPop(e) {
+                    lat_lng_popup_599f185c597a42df867f904b18d6d6a7
+                        .setLatLng(e.latlng)
+                        .setContent("Latitude: " + e.latlng.lat.toFixed(4) +
+                                    "<br>Longitude: " + e.latlng.lng.toFixed(4))
+                        .openOn(map_898edee32e6f4b7fbef8a960984dc820);
+                    }
+                map_898edee32e6f4b7fbef8a960984dc820.on('click', latLngPop);
+            
+    
+        var marker_dfcc3dd276d2496c83cbd2fbd9f12edf = L.marker(
+            [33.9892, -118.2412],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_898edee32e6f4b7fbef8a960984dc820);
+        
+    
+
+                var icon_cde5509bed024c8c9e44089dd8e28ecc = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_dfcc3dd276d2496c83cbd2fbd9f12edf.setIcon(icon_cde5509bed024c8c9e44089dd8e28ecc);
+            
+    
+                var lat_lng_popup_1adba9e2889d422aa1fd3d544037d71c = L.popup();
+                function latLngPop(e) {
+                    lat_lng_popup_1adba9e2889d422aa1fd3d544037d71c
+                        .setLatLng(e.latlng)
+                        .setContent("Latitude: " + e.latlng.lat.toFixed(4) +
+                                    "<br>Longitude: " + e.latlng.lng.toFixed(4))
+                        .openOn(map_898edee32e6f4b7fbef8a960984dc820);
+                    }
+                map_898edee32e6f4b7fbef8a960984dc820.on('click', latLngPop);
+            
+    
+        var marker_37f472fbdb6245f29d16b47aef17063a = L.marker(
+            [33.9857, -118.2628],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_898edee32e6f4b7fbef8a960984dc820);
+        
+    
+
+                var icon_67a52525aea04027a00cb2177c3dec14 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_37f472fbdb6245f29d16b47aef17063a.setIcon(icon_67a52525aea04027a00cb2177c3dec14);
+            
+    
+                var lat_lng_popup_f293b8815d8c46a8800ab5897aa30939 = L.popup();
+                function latLngPop(e) {
+                    lat_lng_popup_f293b8815d8c46a8800ab5897aa30939
+                        .setLatLng(e.latlng)
+                        .setContent("Latitude: " + e.latlng.lat.toFixed(4) +
+                                    "<br>Longitude: " + e.latlng.lng.toFixed(4))
+                        .openOn(map_898edee32e6f4b7fbef8a960984dc820);
+                    }
+                map_898edee32e6f4b7fbef8a960984dc820.on('click', latLngPop);
+            
+    
+        var marker_94c6c140106f4348893bbb16e0724f6b = L.marker(
+            [33.9857, -118.2628],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_898edee32e6f4b7fbef8a960984dc820);
+        
+    
+
+                var icon_abd4c384c7694f42903557293ce38119 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_94c6c140106f4348893bbb16e0724f6b.setIcon(icon_abd4c384c7694f42903557293ce38119);
+            
+    
+                var lat_lng_popup_640cd01db098463791d8b21d21cdd6d7 = L.popup();
+                function latLngPop(e) {
+                    lat_lng_popup_640cd01db098463791d8b21d21cdd6d7
+                        .setLatLng(e.latlng)
+                        .setContent("Latitude: " + e.latlng.lat.toFixed(4) +
+                                    "<br>Longitude: " + e.latlng.lng.toFixed(4))
+                        .openOn(map_898edee32e6f4b7fbef8a960984dc820);
+                    }
+                map_898edee32e6f4b7fbef8a960984dc820.on('click', latLngPop);
+            
+    
+        var marker_567fd2a1c7904e859b54264d872691b7 = L.marker(
+            [33.9721, -118.2608],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_898edee32e6f4b7fbef8a960984dc820);
+        
+    
+
+                var icon_2ed1ee102a2147c3abdb36e525e88df9 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_567fd2a1c7904e859b54264d872691b7.setIcon(icon_2ed1ee102a2147c3abdb36e525e88df9);
+            
+    
+                var lat_lng_popup_61217eaafa8f4d51b28ae098151cf49c = L.popup();
+                function latLngPop(e) {
+                    lat_lng_popup_61217eaafa8f4d51b28ae098151cf49c
+                        .setLatLng(e.latlng)
+                        .setContent("Latitude: " + e.latlng.lat.toFixed(4) +
+                                    "<br>Longitude: " + e.latlng.lng.toFixed(4))
+                        .openOn(map_898edee32e6f4b7fbef8a960984dc820);
+                    }
+                map_898edee32e6f4b7fbef8a960984dc820.on('click', latLngPop);
+            
+    
+        var marker_d4d7cceeedc2401baf6c33532131990a = L.marker(
+            [33.9638, -118.2586],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_898edee32e6f4b7fbef8a960984dc820);
+        
+    
+
+                var icon_bfdf4b8323944c678dc0d5f0787c162a = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_d4d7cceeedc2401baf6c33532131990a.setIcon(icon_bfdf4b8323944c678dc0d5f0787c162a);
+            
+    
+                var lat_lng_popup_042d19f49ea84528a3e3dee3700bac13 = L.popup();
+                function latLngPop(e) {
+                    lat_lng_popup_042d19f49ea84528a3e3dee3700bac13
+                        .setLatLng(e.latlng)
+                        .setContent("Latitude: " + e.latlng.lat.toFixed(4) +
+                                    "<br>Longitude: " + e.latlng.lng.toFixed(4))
+                        .openOn(map_898edee32e6f4b7fbef8a960984dc820);
+                    }
+                map_898edee32e6f4b7fbef8a960984dc820.on('click', latLngPop);
+            
+    
+        var marker_4c7b27d15c16442c9c5ee7b18b33c376 = L.marker(
+            [33.9721, -118.2608],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_898edee32e6f4b7fbef8a960984dc820);
+        
+    
+
+                var icon_5b39ded5624c461bb852f78a4028149b = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_4c7b27d15c16442c9c5ee7b18b33c376.setIcon(icon_5b39ded5624c461bb852f78a4028149b);
+            
+    
+                var lat_lng_popup_fc62f088fd6c4f3095245adaf22c0fad = L.popup();
+                function latLngPop(e) {
+                    lat_lng_popup_fc62f088fd6c4f3095245adaf22c0fad
+                        .setLatLng(e.latlng)
+                        .setContent("Latitude: " + e.latlng.lat.toFixed(4) +
+                                    "<br>Longitude: " + e.latlng.lng.toFixed(4))
+                        .openOn(map_898edee32e6f4b7fbef8a960984dc820);
+                    }
+                map_898edee32e6f4b7fbef8a960984dc820.on('click', latLngPop);
+            
+    
+        var marker_f9f894170f8e429fbaeb86c49414fba0 = L.marker(
+            [33.9675, -118.2586],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_898edee32e6f4b7fbef8a960984dc820);
+        
+    
+
+                var icon_880ff5c0596d4760808e3f756a9bac41 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_f9f894170f8e429fbaeb86c49414fba0.setIcon(icon_880ff5c0596d4760808e3f756a9bac41);
+            
+    
+                var lat_lng_popup_dac3c61f289f437782bf95f78e7c2211 = L.popup();
+                function latLngPop(e) {
+                    lat_lng_popup_dac3c61f289f437782bf95f78e7c2211
+                        .setLatLng(e.latlng)
+                        .setContent("Latitude: " + e.latlng.lat.toFixed(4) +
+                                    "<br>Longitude: " + e.latlng.lng.toFixed(4))
+                        .openOn(map_898edee32e6f4b7fbef8a960984dc820);
+                    }
+                map_898edee32e6f4b7fbef8a960984dc820.on('click', latLngPop);
+            
+    
+        var marker_9c4785c67d2f48da9c72a00e9712d941 = L.marker(
+            [33.961999999999996, -118.2564],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_898edee32e6f4b7fbef8a960984dc820);
+        
+    
+
+                var icon_3b182e6946804f6186726fb427ff9b2f = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_9c4785c67d2f48da9c72a00e9712d941.setIcon(icon_3b182e6946804f6186726fb427ff9b2f);
+            
+    
+                var lat_lng_popup_65fe0492a1cd443c85943445ae330e27 = L.popup();
+                function latLngPop(e) {
+                    lat_lng_popup_65fe0492a1cd443c85943445ae330e27
+                        .setLatLng(e.latlng)
+                        .setContent("Latitude: " + e.latlng.lat.toFixed(4) +
+                                    "<br>Longitude: " + e.latlng.lng.toFixed(4))
+                        .openOn(map_898edee32e6f4b7fbef8a960984dc820);
+                    }
+                map_898edee32e6f4b7fbef8a960984dc820.on('click', latLngPop);
+            
+    
+        var marker_a7fb48e05a5e4ac9927ff9a55aafb1a0 = L.marker(
+            [33.961999999999996, -118.2564],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_898edee32e6f4b7fbef8a960984dc820);
+        
+    
+
+                var icon_d17c7283f8854bafb302d54961330fac = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_a7fb48e05a5e4ac9927ff9a55aafb1a0.setIcon(icon_d17c7283f8854bafb302d54961330fac);
+            
+    
+                var lat_lng_popup_77810cb9c18d41eb88a904d9f1d6a8df = L.popup();
+                function latLngPop(e) {
+                    lat_lng_popup_77810cb9c18d41eb88a904d9f1d6a8df
+                        .setLatLng(e.latlng)
+                        .setContent("Latitude: " + e.latlng.lat.toFixed(4) +
+                                    "<br>Longitude: " + e.latlng.lng.toFixed(4))
+                        .openOn(map_898edee32e6f4b7fbef8a960984dc820);
+                    }
+                map_898edee32e6f4b7fbef8a960984dc820.on('click', latLngPop);
+            
+    
+        var marker_af1a41eca8134b3fafbf308c8e78e22e = L.marker(
+            [33.961999999999996, -118.2564],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_898edee32e6f4b7fbef8a960984dc820);
+        
+    
+
+                var icon_104accfdbb844aac863eb476438ebff0 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_af1a41eca8134b3fafbf308c8e78e22e.setIcon(icon_104accfdbb844aac863eb476438ebff0);
+            
+    
+                var lat_lng_popup_376c79f0f3614575b15ee46f84268ece = L.popup();
+                function latLngPop(e) {
+                    lat_lng_popup_376c79f0f3614575b15ee46f84268ece
+                        .setLatLng(e.latlng)
+                        .setContent("Latitude: " + e.latlng.lat.toFixed(4) +
+                                    "<br>Longitude: " + e.latlng.lng.toFixed(4))
+                        .openOn(map_898edee32e6f4b7fbef8a960984dc820);
+                    }
+                map_898edee32e6f4b7fbef8a960984dc820.on('click', latLngPop);
+            
+    
+        var marker_ec912edbe6164a53b7be7aa9b45f78da = L.marker(
+            [33.9721, -118.2575],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_898edee32e6f4b7fbef8a960984dc820);
+        
+    
+
+                var icon_ea21441b66f0475ab509fa151515fcad = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_ec912edbe6164a53b7be7aa9b45f78da.setIcon(icon_ea21441b66f0475ab509fa151515fcad);
+            
+    
+                var lat_lng_popup_73b2440d06cc4c69b57d071a145b4942 = L.popup();
+                function latLngPop(e) {
+                    lat_lng_popup_73b2440d06cc4c69b57d071a145b4942
+                        .setLatLng(e.latlng)
+                        .setContent("Latitude: " + e.latlng.lat.toFixed(4) +
+                                    "<br>Longitude: " + e.latlng.lng.toFixed(4))
+                        .openOn(map_898edee32e6f4b7fbef8a960984dc820);
+                    }
+                map_898edee32e6f4b7fbef8a960984dc820.on('click', latLngPop);
+            
+    
+        var marker_38bf38328c4f4455bef339bcfdd2d9c6 = L.marker(
+            [33.973, -118.2608],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_898edee32e6f4b7fbef8a960984dc820);
+        
+    
+
+                var icon_4cefc4dbe9cf434baa9aebe10fd47180 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_38bf38328c4f4455bef339bcfdd2d9c6.setIcon(icon_4cefc4dbe9cf434baa9aebe10fd47180);
+            
+    
+                var lat_lng_popup_f87a9c0aec894d00a53b6603feb8b31d = L.popup();
+                function latLngPop(e) {
+                    lat_lng_popup_f87a9c0aec894d00a53b6603feb8b31d
+                        .setLatLng(e.latlng)
+                        .setContent("Latitude: " + e.latlng.lat.toFixed(4) +
+                                    "<br>Longitude: " + e.latlng.lng.toFixed(4))
+                        .openOn(map_898edee32e6f4b7fbef8a960984dc820);
+                    }
+                map_898edee32e6f4b7fbef8a960984dc820.on('click', latLngPop);
+            
+    
+        var marker_6556df120a3b4b23af7be813a3f7c4d6 = L.marker(
+            [33.961999999999996, -118.2564],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_898edee32e6f4b7fbef8a960984dc820);
+        
+    
+
+                var icon_09a4e59097654a479fa287ff6500ff5f = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_6556df120a3b4b23af7be813a3f7c4d6.setIcon(icon_09a4e59097654a479fa287ff6500ff5f);
+            
+    
+                var lat_lng_popup_39432d725ac14994b5900cb0596c55bf = L.popup();
+                function latLngPop(e) {
+                    lat_lng_popup_39432d725ac14994b5900cb0596c55bf
+                        .setLatLng(e.latlng)
+                        .setContent("Latitude: " + e.latlng.lat.toFixed(4) +
+                                    "<br>Longitude: " + e.latlng.lng.toFixed(4))
+                        .openOn(map_898edee32e6f4b7fbef8a960984dc820);
+                    }
+                map_898edee32e6f4b7fbef8a960984dc820.on('click', latLngPop);
+            
+    
+        var marker_5fd5ef0caf6a47ce87196290fef95385 = L.marker(
+            [33.9629, -118.2575],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_898edee32e6f4b7fbef8a960984dc820);
+        
+    
+
+                var icon_5490af0cdf604ea196c60db92b38cf52 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_5fd5ef0caf6a47ce87196290fef95385.setIcon(icon_5490af0cdf604ea196c60db92b38cf52);
+            
+    
+                var lat_lng_popup_f3a940f683d34ac0b814aa7fd63116e2 = L.popup();
+                function latLngPop(e) {
+                    lat_lng_popup_f3a940f683d34ac0b814aa7fd63116e2
+                        .setLatLng(e.latlng)
+                        .setContent("Latitude: " + e.latlng.lat.toFixed(4) +
+                                    "<br>Longitude: " + e.latlng.lng.toFixed(4))
+                        .openOn(map_898edee32e6f4b7fbef8a960984dc820);
+                    }
+                map_898edee32e6f4b7fbef8a960984dc820.on('click', latLngPop);
+            
+    
+        var marker_53029267c7f84a5c946c63a7688800ac = L.marker(
+            [33.9748, -118.2575],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_898edee32e6f4b7fbef8a960984dc820);
+        
+    
+
+                var icon_c9ac7f4773004469bb7642995e0affa5 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_53029267c7f84a5c946c63a7688800ac.setIcon(icon_c9ac7f4773004469bb7642995e0affa5);
+            
+    
+                var lat_lng_popup_942abc1a4c0d436d9d845999324242e3 = L.popup();
+                function latLngPop(e) {
+                    lat_lng_popup_942abc1a4c0d436d9d845999324242e3
+                        .setLatLng(e.latlng)
+                        .setContent("Latitude: " + e.latlng.lat.toFixed(4) +
+                                    "<br>Longitude: " + e.latlng.lng.toFixed(4))
+                        .openOn(map_898edee32e6f4b7fbef8a960984dc820);
+                    }
+                map_898edee32e6f4b7fbef8a960984dc820.on('click', latLngPop);
+            
+    
+        var marker_3e9c00d7ad39411d841e6bf264c4ddb1 = L.marker(
+            [33.9675, -118.2564],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_898edee32e6f4b7fbef8a960984dc820);
+        
+    
+
+                var icon_68eb46dfda2d48c5aba3fc78ad66da17 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_3e9c00d7ad39411d841e6bf264c4ddb1.setIcon(icon_68eb46dfda2d48c5aba3fc78ad66da17);
+            
+    
+                var lat_lng_popup_3fed0b0a5e394682965d41723a97f9b2 = L.popup();
+                function latLngPop(e) {
+                    lat_lng_popup_3fed0b0a5e394682965d41723a97f9b2
+                        .setLatLng(e.latlng)
+                        .setContent("Latitude: " + e.latlng.lat.toFixed(4) +
+                                    "<br>Longitude: " + e.latlng.lng.toFixed(4))
+                        .openOn(map_898edee32e6f4b7fbef8a960984dc820);
+                    }
+                map_898edee32e6f4b7fbef8a960984dc820.on('click', latLngPop);
+            
+    
+        var marker_276a0a68832848b1931b594115d2ef93 = L.marker(
+            [33.961999999999996, -118.2575],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_898edee32e6f4b7fbef8a960984dc820);
+        
+    
+
+                var icon_87358a49360e48828dc64cde5832f8a1 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_276a0a68832848b1931b594115d2ef93.setIcon(icon_87358a49360e48828dc64cde5832f8a1);
+            
+    
+                var lat_lng_popup_5fd2a2de43604632961921a2aefd8240 = L.popup();
+                function latLngPop(e) {
+                    lat_lng_popup_5fd2a2de43604632961921a2aefd8240
+                        .setLatLng(e.latlng)
+                        .setContent("Latitude: " + e.latlng.lat.toFixed(4) +
+                                    "<br>Longitude: " + e.latlng.lng.toFixed(4))
+                        .openOn(map_898edee32e6f4b7fbef8a960984dc820);
+                    }
+                map_898edee32e6f4b7fbef8a960984dc820.on('click', latLngPop);
+            
+    
+        var marker_ff9bebf2257b4dbdb9046ca135356afd = L.marker(
+            [33.9715, -118.2564],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_898edee32e6f4b7fbef8a960984dc820);
+        
+    
+
+                var icon_7c8e2d7cd39b4850ac32ced6b8843792 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_ff9bebf2257b4dbdb9046ca135356afd.setIcon(icon_7c8e2d7cd39b4850ac32ced6b8843792);
+            
+    
+                var lat_lng_popup_6b6620b8ca7d40dc98b8afe7470b8a84 = L.popup();
+                function latLngPop(e) {
+                    lat_lng_popup_6b6620b8ca7d40dc98b8afe7470b8a84
+                        .setLatLng(e.latlng)
+                        .setContent("Latitude: " + e.latlng.lat.toFixed(4) +
+                                    "<br>Longitude: " + e.latlng.lng.toFixed(4))
+                        .openOn(map_898edee32e6f4b7fbef8a960984dc820);
+                    }
+                map_898edee32e6f4b7fbef8a960984dc820.on('click', latLngPop);
+            
+    
+        var marker_01d1c23ed5ea49a7a8f4cdb9e980ac58 = L.marker(
+            [33.973, -118.2608],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_898edee32e6f4b7fbef8a960984dc820);
+        
+    
+
+                var icon_3fde4714fd564a41bd015783d3e86f37 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_01d1c23ed5ea49a7a8f4cdb9e980ac58.setIcon(icon_3fde4714fd564a41bd015783d3e86f37);
+            
+    
+                var lat_lng_popup_18409aa837404e268148a1999ac9c785 = L.popup();
+                function latLngPop(e) {
+                    lat_lng_popup_18409aa837404e268148a1999ac9c785
+                        .setLatLng(e.latlng)
+                        .setContent("Latitude: " + e.latlng.lat.toFixed(4) +
+                                    "<br>Longitude: " + e.latlng.lng.toFixed(4))
+                        .openOn(map_898edee32e6f4b7fbef8a960984dc820);
+                    }
+                map_898edee32e6f4b7fbef8a960984dc820.on('click', latLngPop);
+            
+    
+        var marker_62da966f997d48cdabc87844c91c4082 = L.marker(
+            [33.9638, -118.2586],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_898edee32e6f4b7fbef8a960984dc820);
+        
+    
+
+                var icon_e8331c0e5feb48c3b62d3fa33a4465af = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_62da966f997d48cdabc87844c91c4082.setIcon(icon_e8331c0e5feb48c3b62d3fa33a4465af);
+            
+    
+                var lat_lng_popup_dc81897ae2a647e1bb2db51a66033bff = L.popup();
+                function latLngPop(e) {
+                    lat_lng_popup_dc81897ae2a647e1bb2db51a66033bff
+                        .setLatLng(e.latlng)
+                        .setContent("Latitude: " + e.latlng.lat.toFixed(4) +
+                                    "<br>Longitude: " + e.latlng.lng.toFixed(4))
+                        .openOn(map_898edee32e6f4b7fbef8a960984dc820);
+                    }
+                map_898edee32e6f4b7fbef8a960984dc820.on('click', latLngPop);
+            
+    
+        var marker_2fd9d44ff2d042038cf8ad540e5552f4 = L.marker(
+            [33.9857, -118.2628],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_898edee32e6f4b7fbef8a960984dc820);
+        
+    
+
+                var icon_081081ff090c42bda0699560bc8e1206 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_2fd9d44ff2d042038cf8ad540e5552f4.setIcon(icon_081081ff090c42bda0699560bc8e1206);
+            
+    
+                var lat_lng_popup_93a657d6bd38455fb89fd54484bcf83b = L.popup();
+                function latLngPop(e) {
+                    lat_lng_popup_93a657d6bd38455fb89fd54484bcf83b
+                        .setLatLng(e.latlng)
+                        .setContent("Latitude: " + e.latlng.lat.toFixed(4) +
+                                    "<br>Longitude: " + e.latlng.lng.toFixed(4))
+                        .openOn(map_898edee32e6f4b7fbef8a960984dc820);
+                    }
+                map_898edee32e6f4b7fbef8a960984dc820.on('click', latLngPop);
+            
+    
+        var marker_7a02edb87cd34ecb963218b9566e4c62 = L.marker(
+            [33.9857, -118.2628],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_898edee32e6f4b7fbef8a960984dc820);
+        
+    
+
+                var icon_668087f2dbff4db68a536fa216e60d18 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_7a02edb87cd34ecb963218b9566e4c62.setIcon(icon_668087f2dbff4db68a536fa216e60d18);
+            
+    
+                var lat_lng_popup_975df84da2874144a07701ea2256bd1d = L.popup();
+                function latLngPop(e) {
+                    lat_lng_popup_975df84da2874144a07701ea2256bd1d
+                        .setLatLng(e.latlng)
+                        .setContent("Latitude: " + e.latlng.lat.toFixed(4) +
+                                    "<br>Longitude: " + e.latlng.lng.toFixed(4))
+                        .openOn(map_898edee32e6f4b7fbef8a960984dc820);
+                    }
+                map_898edee32e6f4b7fbef8a960984dc820.on('click', latLngPop);
+            
+    
+        var marker_453e578f2ae54e7f8306586e48ef6fb4 = L.marker(
+            [33.982, -118.2564],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_898edee32e6f4b7fbef8a960984dc820);
+        
+    
+
+                var icon_e97eeeecfc05405192d87209634d5c7f = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_453e578f2ae54e7f8306586e48ef6fb4.setIcon(icon_e97eeeecfc05405192d87209634d5c7f);
+            
+    
+                var lat_lng_popup_43e19ca22dbb46f38ad689260f22b991 = L.popup();
+                function latLngPop(e) {
+                    lat_lng_popup_43e19ca22dbb46f38ad689260f22b991
+                        .setLatLng(e.latlng)
+                        .setContent("Latitude: " + e.latlng.lat.toFixed(4) +
+                                    "<br>Longitude: " + e.latlng.lng.toFixed(4))
+                        .openOn(map_898edee32e6f4b7fbef8a960984dc820);
+                    }
+                map_898edee32e6f4b7fbef8a960984dc820.on('click', latLngPop);
+            
+    
+        var marker_1c9cf0b994b345fb8bc3c1a0edcd0eb4 = L.marker(
+            [33.9843, -118.2564],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_898edee32e6f4b7fbef8a960984dc820);
+        
+    
+
+                var icon_8a8c956720ce4b92a3e1fd5f508469d5 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_1c9cf0b994b345fb8bc3c1a0edcd0eb4.setIcon(icon_8a8c956720ce4b92a3e1fd5f508469d5);
+            
+    
+                var lat_lng_popup_b37473fed9344e7f83e7f1e9fde9e360 = L.popup();
+                function latLngPop(e) {
+                    lat_lng_popup_b37473fed9344e7f83e7f1e9fde9e360
+                        .setLatLng(e.latlng)
+                        .setContent("Latitude: " + e.latlng.lat.toFixed(4) +
+                                    "<br>Longitude: " + e.latlng.lng.toFixed(4))
+                        .openOn(map_898edee32e6f4b7fbef8a960984dc820);
+                    }
+                map_898edee32e6f4b7fbef8a960984dc820.on('click', latLngPop);
+            
+    
+        var marker_e5d19ff64d0a414ab5054cd2dd450b1e = L.marker(
+            [33.9845, -118.2589],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_898edee32e6f4b7fbef8a960984dc820);
+        
+    
+
+                var icon_d13850d2cb8e4341b0e06d41a4fb12f6 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_e5d19ff64d0a414ab5054cd2dd450b1e.setIcon(icon_d13850d2cb8e4341b0e06d41a4fb12f6);
+            
+    
+                var lat_lng_popup_f0b07be2f6a245c182bd1946eb744ec2 = L.popup();
+                function latLngPop(e) {
+                    lat_lng_popup_f0b07be2f6a245c182bd1946eb744ec2
+                        .setLatLng(e.latlng)
+                        .setContent("Latitude: " + e.latlng.lat.toFixed(4) +
+                                    "<br>Longitude: " + e.latlng.lng.toFixed(4))
+                        .openOn(map_898edee32e6f4b7fbef8a960984dc820);
+                    }
+                map_898edee32e6f4b7fbef8a960984dc820.on('click', latLngPop);
+            
+    
+        var marker_90cbb85879aa4d99a44905ff8d6be9b4 = L.marker(
+            [33.982, -118.2564],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_898edee32e6f4b7fbef8a960984dc820);
+        
+    
+
+                var icon_0bcbb29ff8b94801bf67b7a5a45b7a00 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_90cbb85879aa4d99a44905ff8d6be9b4.setIcon(icon_0bcbb29ff8b94801bf67b7a5a45b7a00);
+            
+    
+                var lat_lng_popup_617fea1da7674569b7a3191287fd6528 = L.popup();
+                function latLngPop(e) {
+                    lat_lng_popup_617fea1da7674569b7a3191287fd6528
+                        .setLatLng(e.latlng)
+                        .setContent("Latitude: " + e.latlng.lat.toFixed(4) +
+                                    "<br>Longitude: " + e.latlng.lng.toFixed(4))
+                        .openOn(map_898edee32e6f4b7fbef8a960984dc820);
+                    }
+                map_898edee32e6f4b7fbef8a960984dc820.on('click', latLngPop);
+            
+    
+        var marker_6eaa2d912b8945b28ad4bb01ba9a7c3e = L.marker(
+            [33.982, -118.2564],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_898edee32e6f4b7fbef8a960984dc820);
+        
+    
+
+                var icon_7f4b122bbe3e4c8081ca61d08c7ea1a1 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_6eaa2d912b8945b28ad4bb01ba9a7c3e.setIcon(icon_7f4b122bbe3e4c8081ca61d08c7ea1a1);
+            
+    
+                var lat_lng_popup_660adb9493034a28898fa780c2b17a1c = L.popup();
+                function latLngPop(e) {
+                    lat_lng_popup_660adb9493034a28898fa780c2b17a1c
+                        .setLatLng(e.latlng)
+                        .setContent("Latitude: " + e.latlng.lat.toFixed(4) +
+                                    "<br>Longitude: " + e.latlng.lng.toFixed(4))
+                        .openOn(map_898edee32e6f4b7fbef8a960984dc820);
+                    }
+                map_898edee32e6f4b7fbef8a960984dc820.on('click', latLngPop);
+            
+    
+        var marker_058a5d090a094ecdb2dfb8339ea8af1c = L.marker(
+            [33.9894, -118.2456],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_898edee32e6f4b7fbef8a960984dc820);
+        
+    
+
+                var icon_bd92fe822e41422cbee03e6e08b6d695 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_058a5d090a094ecdb2dfb8339ea8af1c.setIcon(icon_bd92fe822e41422cbee03e6e08b6d695);
+            
+    
+                var lat_lng_popup_2661116b3c9b468e8c646d4a54a8c412 = L.popup();
+                function latLngPop(e) {
+                    lat_lng_popup_2661116b3c9b468e8c646d4a54a8c412
+                        .setLatLng(e.latlng)
+                        .setContent("Latitude: " + e.latlng.lat.toFixed(4) +
+                                    "<br>Longitude: " + e.latlng.lng.toFixed(4))
+                        .openOn(map_898edee32e6f4b7fbef8a960984dc820);
+                    }
+                map_898edee32e6f4b7fbef8a960984dc820.on('click', latLngPop);
+            
+    
+        var marker_c4226df8dfc14d149e44c80cbbcd08a4 = L.marker(
+            [33.9857, -118.2628],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_898edee32e6f4b7fbef8a960984dc820);
+        
+    
+
+                var icon_a69816c887ee4b96852d5afe305aa775 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_c4226df8dfc14d149e44c80cbbcd08a4.setIcon(icon_a69816c887ee4b96852d5afe305aa775);
+            
+    
+                var lat_lng_popup_19f23e38a6c0471381cbdc8bb440c433 = L.popup();
+                function latLngPop(e) {
+                    lat_lng_popup_19f23e38a6c0471381cbdc8bb440c433
+                        .setLatLng(e.latlng)
+                        .setContent("Latitude: " + e.latlng.lat.toFixed(4) +
+                                    "<br>Longitude: " + e.latlng.lng.toFixed(4))
+                        .openOn(map_898edee32e6f4b7fbef8a960984dc820);
+                    }
+                map_898edee32e6f4b7fbef8a960984dc820.on('click', latLngPop);
+            
+    
+        var marker_629a226425e9451eba23d73d25552809 = L.marker(
+            [33.982, -118.2614],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_898edee32e6f4b7fbef8a960984dc820);
+        
+    
+
+                var icon_aeb93c79990e433aa21362fa43687678 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_629a226425e9451eba23d73d25552809.setIcon(icon_aeb93c79990e433aa21362fa43687678);
+            
+    
+                var lat_lng_popup_182dcd275eb247cf946dba38672b116b = L.popup();
+                function latLngPop(e) {
+                    lat_lng_popup_182dcd275eb247cf946dba38672b116b
+                        .setLatLng(e.latlng)
+                        .setContent("Latitude: " + e.latlng.lat.toFixed(4) +
+                                    "<br>Longitude: " + e.latlng.lng.toFixed(4))
+                        .openOn(map_898edee32e6f4b7fbef8a960984dc820);
+                    }
+                map_898edee32e6f4b7fbef8a960984dc820.on('click', latLngPop);
+            
+    
+        var marker_e1a61202220342e5b92d2b47c3987e3c = L.marker(
+            [33.9748, -118.2564],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_898edee32e6f4b7fbef8a960984dc820);
+        
+    
+
+                var icon_90c21b593b11426a927c9c62cce8e1a1 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_e1a61202220342e5b92d2b47c3987e3c.setIcon(icon_90c21b593b11426a927c9c62cce8e1a1);
+            
+    
+                var lat_lng_popup_33dc2fe5a63b4d4a8fe14754ea01aa7b = L.popup();
+                function latLngPop(e) {
+                    lat_lng_popup_33dc2fe5a63b4d4a8fe14754ea01aa7b
+                        .setLatLng(e.latlng)
+                        .setContent("Latitude: " + e.latlng.lat.toFixed(4) +
+                                    "<br>Longitude: " + e.latlng.lng.toFixed(4))
+                        .openOn(map_898edee32e6f4b7fbef8a960984dc820);
+                    }
+                map_898edee32e6f4b7fbef8a960984dc820.on('click', latLngPop);
+            
+    
+        var marker_df15b4862d704217bb7b9091b746fe91 = L.marker(
+            [33.9857, -118.2628],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_898edee32e6f4b7fbef8a960984dc820);
+        
+    
+
+                var icon_b2296e1d47b34fdba575aa983eb70a7e = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_df15b4862d704217bb7b9091b746fe91.setIcon(icon_b2296e1d47b34fdba575aa983eb70a7e);
+            
+    
+                var lat_lng_popup_5407a3b1de634816b7d4878fa177f895 = L.popup();
+                function latLngPop(e) {
+                    lat_lng_popup_5407a3b1de634816b7d4878fa177f895
+                        .setLatLng(e.latlng)
+                        .setContent("Latitude: " + e.latlng.lat.toFixed(4) +
+                                    "<br>Longitude: " + e.latlng.lng.toFixed(4))
+                        .openOn(map_898edee32e6f4b7fbef8a960984dc820);
+                    }
+                map_898edee32e6f4b7fbef8a960984dc820.on('click', latLngPop);
+            
+    
+        var marker_7551715e8ed34b5ea43e872c34476bf1 = L.marker(
+            [33.9748, -118.2564],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_898edee32e6f4b7fbef8a960984dc820);
+        
+    
+
+                var icon_65b3b9e7610542da80316ef789efc5e7 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_7551715e8ed34b5ea43e872c34476bf1.setIcon(icon_65b3b9e7610542da80316ef789efc5e7);
+            
+    
+                var lat_lng_popup_518a42ef828d49fc8d5c6ba807b5b83c = L.popup();
+                function latLngPop(e) {
+                    lat_lng_popup_518a42ef828d49fc8d5c6ba807b5b83c
+                        .setLatLng(e.latlng)
+                        .setContent("Latitude: " + e.latlng.lat.toFixed(4) +
+                                    "<br>Longitude: " + e.latlng.lng.toFixed(4))
+                        .openOn(map_898edee32e6f4b7fbef8a960984dc820);
+                    }
+                map_898edee32e6f4b7fbef8a960984dc820.on('click', latLngPop);
+            
+    
+        var marker_e9ff5232b53b40c08332cb8e1dc943b9 = L.marker(
+            [33.9748, -118.2564],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_898edee32e6f4b7fbef8a960984dc820);
+        
+    
+
+                var icon_135ba83f0ce54843bcaf64f2dd6a8424 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_e9ff5232b53b40c08332cb8e1dc943b9.setIcon(icon_135ba83f0ce54843bcaf64f2dd6a8424);
+            
+    
+                var lat_lng_popup_f9fbac3901774e578ad64769affb41aa = L.popup();
+                function latLngPop(e) {
+                    lat_lng_popup_f9fbac3901774e578ad64769affb41aa
+                        .setLatLng(e.latlng)
+                        .setContent("Latitude: " + e.latlng.lat.toFixed(4) +
+                                    "<br>Longitude: " + e.latlng.lng.toFixed(4))
+                        .openOn(map_898edee32e6f4b7fbef8a960984dc820);
+                    }
+                map_898edee32e6f4b7fbef8a960984dc820.on('click', latLngPop);
+            
+    
+        var marker_cac9efed6b65451099708fac624c1987 = L.marker(
+            [33.9748, -118.2564],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_898edee32e6f4b7fbef8a960984dc820);
+        
+    
+
+                var icon_00911ca0d12547639fce0a67d0521493 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_cac9efed6b65451099708fac624c1987.setIcon(icon_00911ca0d12547639fce0a67d0521493);
+            
+    
+                var lat_lng_popup_131f1717cc074ad0a63578d781cd0ccd = L.popup();
+                function latLngPop(e) {
+                    lat_lng_popup_131f1717cc074ad0a63578d781cd0ccd
+                        .setLatLng(e.latlng)
+                        .setContent("Latitude: " + e.latlng.lat.toFixed(4) +
+                                    "<br>Longitude: " + e.latlng.lng.toFixed(4))
+                        .openOn(map_898edee32e6f4b7fbef8a960984dc820);
+                    }
+                map_898edee32e6f4b7fbef8a960984dc820.on('click', latLngPop);
+            
+    
+        var marker_f7fb3df9657a49b396a66845c359458a = L.marker(
+            [33.9857, -118.2628],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_898edee32e6f4b7fbef8a960984dc820);
+        
+    
+
+                var icon_7cdaffda979547abb502f563f45b72a4 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_f7fb3df9657a49b396a66845c359458a.setIcon(icon_7cdaffda979547abb502f563f45b72a4);
+            
+    
+                var lat_lng_popup_05e286ed1d8e42b59172983dbfeef967 = L.popup();
+                function latLngPop(e) {
+                    lat_lng_popup_05e286ed1d8e42b59172983dbfeef967
+                        .setLatLng(e.latlng)
+                        .setContent("Latitude: " + e.latlng.lat.toFixed(4) +
+                                    "<br>Longitude: " + e.latlng.lng.toFixed(4))
+                        .openOn(map_898edee32e6f4b7fbef8a960984dc820);
+                    }
+                map_898edee32e6f4b7fbef8a960984dc820.on('click', latLngPop);
+            
+    
+        var marker_8924fac82254447eaf9ad2bd62b385fe = L.marker(
+            [33.9896, -118.2445],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_898edee32e6f4b7fbef8a960984dc820);
+        
+    
+
+                var icon_d36a115283614c3a8fe33f17b406fc57 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_8924fac82254447eaf9ad2bd62b385fe.setIcon(icon_d36a115283614c3a8fe33f17b406fc57);
+            
+    
+                var lat_lng_popup_d88140f52aaf4058967705a2fe0ad9d5 = L.popup();
+                function latLngPop(e) {
+                    lat_lng_popup_d88140f52aaf4058967705a2fe0ad9d5
+                        .setLatLng(e.latlng)
+                        .setContent("Latitude: " + e.latlng.lat.toFixed(4) +
+                                    "<br>Longitude: " + e.latlng.lng.toFixed(4))
+                        .openOn(map_898edee32e6f4b7fbef8a960984dc820);
+                    }
+                map_898edee32e6f4b7fbef8a960984dc820.on('click', latLngPop);
+            
+    
+        var marker_66038cff26f8409bb560a01e7a7170a2 = L.marker(
+            [33.9457, -118.2586],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_898edee32e6f4b7fbef8a960984dc820);
+        
+    
+
+                var icon_c4a948adc3744bc38b58a7918e3e294b = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_66038cff26f8409bb560a01e7a7170a2.setIcon(icon_c4a948adc3744bc38b58a7918e3e294b);
+            
+    
+                var lat_lng_popup_ee806187be5f43b19265a3f640617ce5 = L.popup();
+                function latLngPop(e) {
+                    lat_lng_popup_ee806187be5f43b19265a3f640617ce5
+                        .setLatLng(e.latlng)
+                        .setContent("Latitude: " + e.latlng.lat.toFixed(4) +
+                                    "<br>Longitude: " + e.latlng.lng.toFixed(4))
+                        .openOn(map_898edee32e6f4b7fbef8a960984dc820);
+                    }
+                map_898edee32e6f4b7fbef8a960984dc820.on('click', latLngPop);
+            
+    
+        var marker_eedb533474624b44875bacd5b8667f48 = L.marker(
+            [33.9511, -118.2651],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_898edee32e6f4b7fbef8a960984dc820);
+        
+    
+
+                var icon_a413ffc642d9422bb54b85c358c2939e = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_eedb533474624b44875bacd5b8667f48.setIcon(icon_a413ffc642d9422bb54b85c358c2939e);
+            
+    
+                var lat_lng_popup_7af1aeeef9ed449ba81844d69b910c83 = L.popup();
+                function latLngPop(e) {
+                    lat_lng_popup_7af1aeeef9ed449ba81844d69b910c83
+                        .setLatLng(e.latlng)
+                        .setContent("Latitude: " + e.latlng.lat.toFixed(4) +
+                                    "<br>Longitude: " + e.latlng.lng.toFixed(4))
+                        .openOn(map_898edee32e6f4b7fbef8a960984dc820);
+                    }
+                map_898edee32e6f4b7fbef8a960984dc820.on('click', latLngPop);
+            
+    
+        var marker_61b458f93aca4e31905d11ac7ee1ff1b = L.marker(
+            [33.9491, -118.24799999999999],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_898edee32e6f4b7fbef8a960984dc820);
+        
+    
+
+                var icon_9dcf0bbc87414a35a108c8a804d84475 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_61b458f93aca4e31905d11ac7ee1ff1b.setIcon(icon_9dcf0bbc87414a35a108c8a804d84475);
+            
+    
+                var lat_lng_popup_6c313d72313649489fb189bc04c87d9d = L.popup();
+                function latLngPop(e) {
+                    lat_lng_popup_6c313d72313649489fb189bc04c87d9d
+                        .setLatLng(e.latlng)
+                        .setContent("Latitude: " + e.latlng.lat.toFixed(4) +
+                                    "<br>Longitude: " + e.latlng.lng.toFixed(4))
+                        .openOn(map_898edee32e6f4b7fbef8a960984dc820);
+                    }
+                map_898edee32e6f4b7fbef8a960984dc820.on('click', latLngPop);
+            
+    
+        var marker_0a7e933c42b04f83a544d6d4b71019d6 = L.marker(
+            [33.9521, -118.2564],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_898edee32e6f4b7fbef8a960984dc820);
+        
+    
+
+                var icon_18df3a8aba3a4fafad4e98f8116d2cf7 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_0a7e933c42b04f83a544d6d4b71019d6.setIcon(icon_18df3a8aba3a4fafad4e98f8116d2cf7);
+            
+    
+                var lat_lng_popup_a87cabaeef0e4349a4f02a7aa7f5fcd1 = L.popup();
+                function latLngPop(e) {
+                    lat_lng_popup_a87cabaeef0e4349a4f02a7aa7f5fcd1
+                        .setLatLng(e.latlng)
+                        .setContent("Latitude: " + e.latlng.lat.toFixed(4) +
+                                    "<br>Longitude: " + e.latlng.lng.toFixed(4))
+                        .openOn(map_898edee32e6f4b7fbef8a960984dc820);
+                    }
+                map_898edee32e6f4b7fbef8a960984dc820.on('click', latLngPop);
+            
+    
+        var marker_f880aedebdd74d0e81c5ed656abd9f40 = L.marker(
+            [33.9533, -118.24600000000001],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_898edee32e6f4b7fbef8a960984dc820);
+        
+    
+
+                var icon_0b25832434264c8791f0f11e19f35a47 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_f880aedebdd74d0e81c5ed656abd9f40.setIcon(icon_0b25832434264c8791f0f11e19f35a47);
+            
+    
+                var lat_lng_popup_3215b791dccd42508e4ad8412bd8afbf = L.popup();
+                function latLngPop(e) {
+                    lat_lng_popup_3215b791dccd42508e4ad8412bd8afbf
+                        .setLatLng(e.latlng)
+                        .setContent("Latitude: " + e.latlng.lat.toFixed(4) +
+                                    "<br>Longitude: " + e.latlng.lng.toFixed(4))
+                        .openOn(map_898edee32e6f4b7fbef8a960984dc820);
+                    }
+                map_898edee32e6f4b7fbef8a960984dc820.on('click', latLngPop);
+            
+    
+        var marker_8ae3591512d04194a4791c05463f464c = L.marker(
+            [33.9415, -118.244],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_898edee32e6f4b7fbef8a960984dc820);
+        
+    
+
+                var icon_8100f7b3151d4322a80662f63af3c610 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_8ae3591512d04194a4791c05463f464c.setIcon(icon_8100f7b3151d4322a80662f63af3c610);
+            
+    
+                var lat_lng_popup_a1849745d31f40458a4e09967853885a = L.popup();
+                function latLngPop(e) {
+                    lat_lng_popup_a1849745d31f40458a4e09967853885a
+                        .setLatLng(e.latlng)
+                        .setContent("Latitude: " + e.latlng.lat.toFixed(4) +
+                                    "<br>Longitude: " + e.latlng.lng.toFixed(4))
+                        .openOn(map_898edee32e6f4b7fbef8a960984dc820);
+                    }
+                map_898edee32e6f4b7fbef8a960984dc820.on('click', latLngPop);
+            
+    
+        var marker_42f019390c6b44079690980a25f4a1c3 = L.marker(
+            [33.9502, -118.2651],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_898edee32e6f4b7fbef8a960984dc820);
+        
+    
+
+                var icon_46a77e113cb44ebe90fb58909a26c61e = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_42f019390c6b44079690980a25f4a1c3.setIcon(icon_46a77e113cb44ebe90fb58909a26c61e);
+            
+    
+                var lat_lng_popup_7279c3c20f604e85bf53ed907306e5b2 = L.popup();
+                function latLngPop(e) {
+                    lat_lng_popup_7279c3c20f604e85bf53ed907306e5b2
+                        .setLatLng(e.latlng)
+                        .setContent("Latitude: " + e.latlng.lat.toFixed(4) +
+                                    "<br>Longitude: " + e.latlng.lng.toFixed(4))
+                        .openOn(map_898edee32e6f4b7fbef8a960984dc820);
+                    }
+                map_898edee32e6f4b7fbef8a960984dc820.on('click', latLngPop);
+            
+    
+        var marker_e8e38f114de34884acc155dc1d2dca39 = L.marker(
+            [33.9492, -118.2695],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_898edee32e6f4b7fbef8a960984dc820);
+        
+    
+
+                var icon_9008660e30964745a7b5ca9c8566a2ce = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_e8e38f114de34884acc155dc1d2dca39.setIcon(icon_9008660e30964745a7b5ca9c8566a2ce);
+            
+    
+                var lat_lng_popup_a082ae99e4eb491f8939c636f75da4fe = L.popup();
+                function latLngPop(e) {
+                    lat_lng_popup_a082ae99e4eb491f8939c636f75da4fe
+                        .setLatLng(e.latlng)
+                        .setContent("Latitude: " + e.latlng.lat.toFixed(4) +
+                                    "<br>Longitude: " + e.latlng.lng.toFixed(4))
+                        .openOn(map_898edee32e6f4b7fbef8a960984dc820);
+                    }
+                map_898edee32e6f4b7fbef8a960984dc820.on('click', latLngPop);
+            
+    
+        var marker_70f02c4e9bdd45a8adcd921ea1cc115d = L.marker(
+            [33.9393, -118.2587],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_898edee32e6f4b7fbef8a960984dc820);
+        
+    
+
+                var icon_a20ce88d76264b84a38f817e28edfe3c = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_70f02c4e9bdd45a8adcd921ea1cc115d.setIcon(icon_a20ce88d76264b84a38f817e28edfe3c);
+            
+    
+                var lat_lng_popup_1afd0c70452b44b7b9c99e653a2014b7 = L.popup();
+                function latLngPop(e) {
+                    lat_lng_popup_1afd0c70452b44b7b9c99e653a2014b7
+                        .setLatLng(e.latlng)
+                        .setContent("Latitude: " + e.latlng.lat.toFixed(4) +
+                                    "<br>Longitude: " + e.latlng.lng.toFixed(4))
+                        .openOn(map_898edee32e6f4b7fbef8a960984dc820);
+                    }
+                map_898edee32e6f4b7fbef8a960984dc820.on('click', latLngPop);
+            
+    
+        var marker_1bd084f94cba47bc89d6e61da2f633e2 = L.marker(
+            [33.9432, -118.2435],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_898edee32e6f4b7fbef8a960984dc820);
+        
+    
+
+                var icon_68460cfe32f84e81bc55a9d89c67af36 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_1bd084f94cba47bc89d6e61da2f633e2.setIcon(icon_68460cfe32f84e81bc55a9d89c67af36);
+            
+    
+                var lat_lng_popup_c94235ac84004d54b32a30513512cbc2 = L.popup();
+                function latLngPop(e) {
+                    lat_lng_popup_c94235ac84004d54b32a30513512cbc2
+                        .setLatLng(e.latlng)
+                        .setContent("Latitude: " + e.latlng.lat.toFixed(4) +
+                                    "<br>Longitude: " + e.latlng.lng.toFixed(4))
+                        .openOn(map_898edee32e6f4b7fbef8a960984dc820);
+                    }
+                map_898edee32e6f4b7fbef8a960984dc820.on('click', latLngPop);
+            
+    
+        var marker_085157318d4b46ccbfeeff4fe3ed0243 = L.marker(
+            [33.9439, -118.2346],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_898edee32e6f4b7fbef8a960984dc820);
+        
+    
+
+                var icon_f1ee0eb293aa4f2a8325e422fcf02984 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_085157318d4b46ccbfeeff4fe3ed0243.setIcon(icon_f1ee0eb293aa4f2a8325e422fcf02984);
+            
+    
+                var lat_lng_popup_82e58025041b4a4f8fa1e14708cd4a39 = L.popup();
+                function latLngPop(e) {
+                    lat_lng_popup_82e58025041b4a4f8fa1e14708cd4a39
+                        .setLatLng(e.latlng)
+                        .setContent("Latitude: " + e.latlng.lat.toFixed(4) +
+                                    "<br>Longitude: " + e.latlng.lng.toFixed(4))
+                        .openOn(map_898edee32e6f4b7fbef8a960984dc820);
+                    }
+                map_898edee32e6f4b7fbef8a960984dc820.on('click', latLngPop);
+            
+    
+        var marker_883b1e2a33854cd38d147b87b2d4f235 = L.marker(
+            [33.9449, -118.2344],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_898edee32e6f4b7fbef8a960984dc820);
+        
+    
+
+                var icon_28d33abe68d3480996a18a4c202d8056 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_883b1e2a33854cd38d147b87b2d4f235.setIcon(icon_28d33abe68d3480996a18a4c202d8056);
+            
+    
+                var lat_lng_popup_f0cc7dda59ed4a438376fe13a8388377 = L.popup();
+                function latLngPop(e) {
+                    lat_lng_popup_f0cc7dda59ed4a438376fe13a8388377
+                        .setLatLng(e.latlng)
+                        .setContent("Latitude: " + e.latlng.lat.toFixed(4) +
+                                    "<br>Longitude: " + e.latlng.lng.toFixed(4))
+                        .openOn(map_898edee32e6f4b7fbef8a960984dc820);
+                    }
+                map_898edee32e6f4b7fbef8a960984dc820.on('click', latLngPop);
+            
+    
+        var marker_893cc3ebdaf740bcb91f8933349207ff = L.marker(
+            [33.9433, -118.2462],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_898edee32e6f4b7fbef8a960984dc820);
+        
+    
+
+                var icon_abd700005bcc43e7a8799bbbf3156b98 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_893cc3ebdaf740bcb91f8933349207ff.setIcon(icon_abd700005bcc43e7a8799bbbf3156b98);
+            
+    
+                var lat_lng_popup_3f1cf568ab414d72b3d241fa611cac54 = L.popup();
+                function latLngPop(e) {
+                    lat_lng_popup_3f1cf568ab414d72b3d241fa611cac54
+                        .setLatLng(e.latlng)
+                        .setContent("Latitude: " + e.latlng.lat.toFixed(4) +
+                                    "<br>Longitude: " + e.latlng.lng.toFixed(4))
+                        .openOn(map_898edee32e6f4b7fbef8a960984dc820);
+                    }
+                map_898edee32e6f4b7fbef8a960984dc820.on('click', latLngPop);
+            
+    
+        var marker_7a8c264ab99f46f6a5634373b10ae5dc = L.marker(
+            [33.9419, -118.2652],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_898edee32e6f4b7fbef8a960984dc820);
+        
+    
+
+                var icon_6751f8dda13546e19c8e089b1ba0875c = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_7a8c264ab99f46f6a5634373b10ae5dc.setIcon(icon_6751f8dda13546e19c8e089b1ba0875c);
+            
+    
+                var lat_lng_popup_de343b878b1a4106b50ce4693a25c5d3 = L.popup();
+                function latLngPop(e) {
+                    lat_lng_popup_de343b878b1a4106b50ce4693a25c5d3
+                        .setLatLng(e.latlng)
+                        .setContent("Latitude: " + e.latlng.lat.toFixed(4) +
+                                    "<br>Longitude: " + e.latlng.lng.toFixed(4))
+                        .openOn(map_898edee32e6f4b7fbef8a960984dc820);
+                    }
+                map_898edee32e6f4b7fbef8a960984dc820.on('click', latLngPop);
+            
+    
+        var marker_f24352af48da4e95a4b5322619cab069 = L.marker(
+            [33.9447, -118.2673],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_898edee32e6f4b7fbef8a960984dc820);
+        
+    
+
+                var icon_b27d92d0c25e4725b14d790258f73b1f = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_f24352af48da4e95a4b5322619cab069.setIcon(icon_b27d92d0c25e4725b14d790258f73b1f);
+            
+    
+                var lat_lng_popup_3b196fd6fbf848cf834565d2363a8c44 = L.popup();
+                function latLngPop(e) {
+                    lat_lng_popup_3b196fd6fbf848cf834565d2363a8c44
+                        .setLatLng(e.latlng)
+                        .setContent("Latitude: " + e.latlng.lat.toFixed(4) +
+                                    "<br>Longitude: " + e.latlng.lng.toFixed(4))
+                        .openOn(map_898edee32e6f4b7fbef8a960984dc820);
+                    }
+                map_898edee32e6f4b7fbef8a960984dc820.on('click', latLngPop);
+            
+    
+        var marker_51f438ec9ea746f9bffdda5dbdb58ac4 = L.marker(
+            [33.9511, -118.2565],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_898edee32e6f4b7fbef8a960984dc820);
+        
+    
+
+                var icon_8b52a07797214bb5b73301c90b4490be = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_51f438ec9ea746f9bffdda5dbdb58ac4.setIcon(icon_8b52a07797214bb5b73301c90b4490be);
+            
+    
+                var lat_lng_popup_3b62288d51674c528d33fc050c34530b = L.popup();
+                function latLngPop(e) {
+                    lat_lng_popup_3b62288d51674c528d33fc050c34530b
+                        .setLatLng(e.latlng)
+                        .setContent("Latitude: " + e.latlng.lat.toFixed(4) +
+                                    "<br>Longitude: " + e.latlng.lng.toFixed(4))
+                        .openOn(map_898edee32e6f4b7fbef8a960984dc820);
+                    }
+                map_898edee32e6f4b7fbef8a960984dc820.on('click', latLngPop);
+            
+    
+        var marker_2b86c1e8135045c69bdadd8983d4bf60 = L.marker(
+            [33.9443, -118.2483],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_898edee32e6f4b7fbef8a960984dc820);
+        
+    
+
+                var icon_73e8e3448189443c85b465cec15e24ec = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_2b86c1e8135045c69bdadd8983d4bf60.setIcon(icon_73e8e3448189443c85b465cec15e24ec);
+            
+    
+                var lat_lng_popup_c2e846b948d949f098f273c2b5f2c7e2 = L.popup();
+                function latLngPop(e) {
+                    lat_lng_popup_c2e846b948d949f098f273c2b5f2c7e2
+                        .setLatLng(e.latlng)
+                        .setContent("Latitude: " + e.latlng.lat.toFixed(4) +
+                                    "<br>Longitude: " + e.latlng.lng.toFixed(4))
+                        .openOn(map_898edee32e6f4b7fbef8a960984dc820);
+                    }
+                map_898edee32e6f4b7fbef8a960984dc820.on('click', latLngPop);
+            
+    
+        var marker_f33437ebdf9345e88f5eb000b9874729 = L.marker(
+            [33.9432, -118.2425],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_898edee32e6f4b7fbef8a960984dc820);
+        
+    
+
+                var icon_8db6783b56994810850212dd640fe680 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_f33437ebdf9345e88f5eb000b9874729.setIcon(icon_8db6783b56994810850212dd640fe680);
+            
+    
+                var lat_lng_popup_2b31adff8243470bba6da8aba8f818de = L.popup();
+                function latLngPop(e) {
+                    lat_lng_popup_2b31adff8243470bba6da8aba8f818de
+                        .setLatLng(e.latlng)
+                        .setContent("Latitude: " + e.latlng.lat.toFixed(4) +
+                                    "<br>Longitude: " + e.latlng.lng.toFixed(4))
+                        .openOn(map_898edee32e6f4b7fbef8a960984dc820);
+                    }
+                map_898edee32e6f4b7fbef8a960984dc820.on('click', latLngPop);
+            
+    
+        var marker_da604c6ceefa4eb787e8c2a7e632167a = L.marker(
+            [33.9507, -118.2453],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_898edee32e6f4b7fbef8a960984dc820);
+        
+    
+
+                var icon_ceae5b084d524bf3ad854b614ac1de86 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_da604c6ceefa4eb787e8c2a7e632167a.setIcon(icon_ceae5b084d524bf3ad854b614ac1de86);
+            
+    
+                var lat_lng_popup_c7cc0fb086ed4b56be662907d44dcbda = L.popup();
+                function latLngPop(e) {
+                    lat_lng_popup_c7cc0fb086ed4b56be662907d44dcbda
+                        .setLatLng(e.latlng)
+                        .setContent("Latitude: " + e.latlng.lat.toFixed(4) +
+                                    "<br>Longitude: " + e.latlng.lng.toFixed(4))
+                        .openOn(map_898edee32e6f4b7fbef8a960984dc820);
+                    }
+                map_898edee32e6f4b7fbef8a960984dc820.on('click', latLngPop);
+            
+    
+        var marker_c57088ef0fa94728bbca22db2793bc85 = L.marker(
+            [33.9475, -118.2652],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_898edee32e6f4b7fbef8a960984dc820);
+        
+    
+
+                var icon_955bcc21b04b4983890fb06c698ad231 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_c57088ef0fa94728bbca22db2793bc85.setIcon(icon_955bcc21b04b4983890fb06c698ad231);
+            
+    
+                var lat_lng_popup_4b25d166c9eb42258b9001f7b6f8fa50 = L.popup();
+                function latLngPop(e) {
+                    lat_lng_popup_4b25d166c9eb42258b9001f7b6f8fa50
+                        .setLatLng(e.latlng)
+                        .setContent("Latitude: " + e.latlng.lat.toFixed(4) +
+                                    "<br>Longitude: " + e.latlng.lng.toFixed(4))
+                        .openOn(map_898edee32e6f4b7fbef8a960984dc820);
+                    }
+                map_898edee32e6f4b7fbef8a960984dc820.on('click', latLngPop);
+            
+    
+        var marker_46ea4da168434a9caf710770e4fcf34d = L.marker(
+            [33.9574, -118.2586],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_898edee32e6f4b7fbef8a960984dc820);
+        
+    
+
+                var icon_85b0375aca3c45ed9e149b27f0996035 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_46ea4da168434a9caf710770e4fcf34d.setIcon(icon_85b0375aca3c45ed9e149b27f0996035);
+            
+    
+                var lat_lng_popup_9ecce29148814436a4fa1dfaf3a2cd6f = L.popup();
+                function latLngPop(e) {
+                    lat_lng_popup_9ecce29148814436a4fa1dfaf3a2cd6f
+                        .setLatLng(e.latlng)
+                        .setContent("Latitude: " + e.latlng.lat.toFixed(4) +
+                                    "<br>Longitude: " + e.latlng.lng.toFixed(4))
+                        .openOn(map_898edee32e6f4b7fbef8a960984dc820);
+                    }
+                map_898edee32e6f4b7fbef8a960984dc820.on('click', latLngPop);
+            
+    
+        var marker_cb32a0be646b4eca85bdb54dbc537330 = L.marker(
+            [33.9481, -118.2434],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_898edee32e6f4b7fbef8a960984dc820);
+        
+    
+
+                var icon_5d293265c41c4c6b939de15860eb3156 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_cb32a0be646b4eca85bdb54dbc537330.setIcon(icon_5d293265c41c4c6b939de15860eb3156);
+            
+    
+                var lat_lng_popup_b8c4b5d3936744ec8244c19de3e4f42e = L.popup();
+                function latLngPop(e) {
+                    lat_lng_popup_b8c4b5d3936744ec8244c19de3e4f42e
+                        .setLatLng(e.latlng)
+                        .setContent("Latitude: " + e.latlng.lat.toFixed(4) +
+                                    "<br>Longitude: " + e.latlng.lng.toFixed(4))
+                        .openOn(map_898edee32e6f4b7fbef8a960984dc820);
+                    }
+                map_898edee32e6f4b7fbef8a960984dc820.on('click', latLngPop);
+            
+    
+        var marker_3282607fed6242bb827d56a4ce0bea98 = L.marker(
+            [33.9432, -118.2379],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_898edee32e6f4b7fbef8a960984dc820);
+        
+    
+
+                var icon_5be8d370332c42f19feb812f4427822a = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_3282607fed6242bb827d56a4ce0bea98.setIcon(icon_5be8d370332c42f19feb812f4427822a);
+            
+    
+                var lat_lng_popup_0b271ce81fee4fbfaf7d5da195cac24e = L.popup();
+                function latLngPop(e) {
+                    lat_lng_popup_0b271ce81fee4fbfaf7d5da195cac24e
+                        .setLatLng(e.latlng)
+                        .setContent("Latitude: " + e.latlng.lat.toFixed(4) +
+                                    "<br>Longitude: " + e.latlng.lng.toFixed(4))
+                        .openOn(map_898edee32e6f4b7fbef8a960984dc820);
+                    }
+                map_898edee32e6f4b7fbef8a960984dc820.on('click', latLngPop);
+            
+    
+        var marker_c85b7d51bce84104a4756d67c86b3e7c = L.marker(
+            [33.9405, -118.2426],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_898edee32e6f4b7fbef8a960984dc820);
+        
+    
+
+                var icon_e1e70dad9fbe4dd7a67548106a6c2976 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_c85b7d51bce84104a4756d67c86b3e7c.setIcon(icon_e1e70dad9fbe4dd7a67548106a6c2976);
+            
+    
+                var lat_lng_popup_f5ff5f60941b461b95c28a64234c914c = L.popup();
+                function latLngPop(e) {
+                    lat_lng_popup_f5ff5f60941b461b95c28a64234c914c
+                        .setLatLng(e.latlng)
+                        .setContent("Latitude: " + e.latlng.lat.toFixed(4) +
+                                    "<br>Longitude: " + e.latlng.lng.toFixed(4))
+                        .openOn(map_898edee32e6f4b7fbef8a960984dc820);
+                    }
+                map_898edee32e6f4b7fbef8a960984dc820.on('click', latLngPop);
+            
+    
+        var marker_5430c57089ec4351a384b7b1b2402d85 = L.marker(
+            [33.946999999999996, -118.2684],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_898edee32e6f4b7fbef8a960984dc820);
+        
+    
+
+                var icon_598926c992b84f2895020d20fbd98d7a = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_5430c57089ec4351a384b7b1b2402d85.setIcon(icon_598926c992b84f2895020d20fbd98d7a);
+            
+    
+                var lat_lng_popup_6928a9dc86c64479a98c43a849b97fc4 = L.popup();
+                function latLngPop(e) {
+                    lat_lng_popup_6928a9dc86c64479a98c43a849b97fc4
+                        .setLatLng(e.latlng)
+                        .setContent("Latitude: " + e.latlng.lat.toFixed(4) +
+                                    "<br>Longitude: " + e.latlng.lng.toFixed(4))
+                        .openOn(map_898edee32e6f4b7fbef8a960984dc820);
+                    }
+                map_898edee32e6f4b7fbef8a960984dc820.on('click', latLngPop);
+            
+    
+        var marker_620625693d4b4cdc9b7de65935b16b7f = L.marker(
+            [33.946999999999996, -118.2684],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_898edee32e6f4b7fbef8a960984dc820);
+        
+    
+
+                var icon_d09f5648cdf34e3798c47627ce18a353 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_620625693d4b4cdc9b7de65935b16b7f.setIcon(icon_d09f5648cdf34e3798c47627ce18a353);
+            
+    
+                var lat_lng_popup_cb114fc9b6534de5b525210081197b58 = L.popup();
+                function latLngPop(e) {
+                    lat_lng_popup_cb114fc9b6534de5b525210081197b58
+                        .setLatLng(e.latlng)
+                        .setContent("Latitude: " + e.latlng.lat.toFixed(4) +
+                                    "<br>Longitude: " + e.latlng.lng.toFixed(4))
+                        .openOn(map_898edee32e6f4b7fbef8a960984dc820);
+                    }
+                map_898edee32e6f4b7fbef8a960984dc820.on('click', latLngPop);
+            
+    
+        var marker_087fda4fdd84443994ded4a4430b7d0c = L.marker(
+            [33.9441, -118.2608],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_898edee32e6f4b7fbef8a960984dc820);
+        
+    
+
+                var icon_ca3c9cfdd42c4b2ab72da54e400ad299 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_087fda4fdd84443994ded4a4430b7d0c.setIcon(icon_ca3c9cfdd42c4b2ab72da54e400ad299);
+            
+    
+                var lat_lng_popup_b479a5796a0d43bfbdde63cfe190e52b = L.popup();
+                function latLngPop(e) {
+                    lat_lng_popup_b479a5796a0d43bfbdde63cfe190e52b
+                        .setLatLng(e.latlng)
+                        .setContent("Latitude: " + e.latlng.lat.toFixed(4) +
+                                    "<br>Longitude: " + e.latlng.lng.toFixed(4))
+                        .openOn(map_898edee32e6f4b7fbef8a960984dc820);
+                    }
+                map_898edee32e6f4b7fbef8a960984dc820.on('click', latLngPop);
+            
+    
+        var marker_1f9a1fcccfdc41f9819ebe5553492e9d = L.marker(
+            [33.9432, -118.2462],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_898edee32e6f4b7fbef8a960984dc820);
+        
+    
+
+                var icon_5dc694485a784e87880a1f696ad27a90 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_1f9a1fcccfdc41f9819ebe5553492e9d.setIcon(icon_5dc694485a784e87880a1f696ad27a90);
+            
+    
+                var lat_lng_popup_e52024867d1d4604b64badad6998e983 = L.popup();
+                function latLngPop(e) {
+                    lat_lng_popup_e52024867d1d4604b64badad6998e983
+                        .setLatLng(e.latlng)
+                        .setContent("Latitude: " + e.latlng.lat.toFixed(4) +
+                                    "<br>Longitude: " + e.latlng.lng.toFixed(4))
+                        .openOn(map_898edee32e6f4b7fbef8a960984dc820);
+                    }
+                map_898edee32e6f4b7fbef8a960984dc820.on('click', latLngPop);
+            
+    
+        var marker_14a748f5eb164874b329324e363cabf1 = L.marker(
+            [33.9415, -118.2462],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_898edee32e6f4b7fbef8a960984dc820);
+        
+    
+
+                var icon_472c9bdd2d0844c1b7f7837b761ce464 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_14a748f5eb164874b329324e363cabf1.setIcon(icon_472c9bdd2d0844c1b7f7837b761ce464);
+            
+    
+                var lat_lng_popup_038e6fd2d0ca41599d0981fb9c093f85 = L.popup();
+                function latLngPop(e) {
+                    lat_lng_popup_038e6fd2d0ca41599d0981fb9c093f85
+                        .setLatLng(e.latlng)
+                        .setContent("Latitude: " + e.latlng.lat.toFixed(4) +
+                                    "<br>Longitude: " + e.latlng.lng.toFixed(4))
+                        .openOn(map_898edee32e6f4b7fbef8a960984dc820);
+                    }
+                map_898edee32e6f4b7fbef8a960984dc820.on('click', latLngPop);
+            
+    
+        var marker_ade6187f639649d89ecb0495e812ca93 = L.marker(
+            [33.941, -118.2652],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_898edee32e6f4b7fbef8a960984dc820);
+        
+    
+
+                var icon_7e39956f795340609ad561d15346cea4 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_ade6187f639649d89ecb0495e812ca93.setIcon(icon_7e39956f795340609ad561d15346cea4);
+            
+    
+                var lat_lng_popup_82f720f3480147ea862c69386ef58394 = L.popup();
+                function latLngPop(e) {
+                    lat_lng_popup_82f720f3480147ea862c69386ef58394
+                        .setLatLng(e.latlng)
+                        .setContent("Latitude: " + e.latlng.lat.toFixed(4) +
+                                    "<br>Longitude: " + e.latlng.lng.toFixed(4))
+                        .openOn(map_898edee32e6f4b7fbef8a960984dc820);
+                    }
+                map_898edee32e6f4b7fbef8a960984dc820.on('click', latLngPop);
+            
+    
+        var marker_f1c69ab6500a4ac49247edd77b15ddf9 = L.marker(
+            [33.9431, -118.2278],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_898edee32e6f4b7fbef8a960984dc820);
+        
+    
+
+                var icon_7b63c741670040da889ddad002678f02 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_f1c69ab6500a4ac49247edd77b15ddf9.setIcon(icon_7b63c741670040da889ddad002678f02);
+            
+    
+                var lat_lng_popup_296d72f7883a431ba702d9e3bb7733e6 = L.popup();
+                function latLngPop(e) {
+                    lat_lng_popup_296d72f7883a431ba702d9e3bb7733e6
+                        .setLatLng(e.latlng)
+                        .setContent("Latitude: " + e.latlng.lat.toFixed(4) +
+                                    "<br>Longitude: " + e.latlng.lng.toFixed(4))
+                        .openOn(map_898edee32e6f4b7fbef8a960984dc820);
+                    }
+                map_898edee32e6f4b7fbef8a960984dc820.on('click', latLngPop);
+            
+    
+        var marker_33aa675764b4418f9a581e98c0fd35af = L.marker(
+            [33.9485, -118.2461],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_898edee32e6f4b7fbef8a960984dc820);
+        
+    
+
+                var icon_4ff9d4b8daaa43498ba1de3d35a66127 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_33aa675764b4418f9a581e98c0fd35af.setIcon(icon_4ff9d4b8daaa43498ba1de3d35a66127);
+            
+    
+                var lat_lng_popup_f3f8014c354942e580ad96080821a843 = L.popup();
+                function latLngPop(e) {
+                    lat_lng_popup_f3f8014c354942e580ad96080821a843
+                        .setLatLng(e.latlng)
+                        .setContent("Latitude: " + e.latlng.lat.toFixed(4) +
+                                    "<br>Longitude: " + e.latlng.lng.toFixed(4))
+                        .openOn(map_898edee32e6f4b7fbef8a960984dc820);
+                    }
+                map_898edee32e6f4b7fbef8a960984dc820.on('click', latLngPop);
+            
+    
+        var marker_9c4ad06241bc4201aa868e259a085514 = L.marker(
+            [33.9433, -118.2608],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_898edee32e6f4b7fbef8a960984dc820);
+        
+    
+
+                var icon_8588afa8fbd8459aa3083e3a55900bfb = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_9c4ad06241bc4201aa868e259a085514.setIcon(icon_8588afa8fbd8459aa3083e3a55900bfb);
+            
+    
+                var lat_lng_popup_85b6a5ece060409485a6446291f823c0 = L.popup();
+                function latLngPop(e) {
+                    lat_lng_popup_85b6a5ece060409485a6446291f823c0
+                        .setLatLng(e.latlng)
+                        .setContent("Latitude: " + e.latlng.lat.toFixed(4) +
+                                    "<br>Longitude: " + e.latlng.lng.toFixed(4))
+                        .openOn(map_898edee32e6f4b7fbef8a960984dc820);
+                    }
+                map_898edee32e6f4b7fbef8a960984dc820.on('click', latLngPop);
+            
+    
+        var marker_2983ce43c9394658812867d5179db4c8 = L.marker(
+            [33.9457, -118.2379],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_898edee32e6f4b7fbef8a960984dc820);
+        
+    
+
+                var icon_1f9945b89c4b460298b6a1733eaa2005 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_2983ce43c9394658812867d5179db4c8.setIcon(icon_1f9945b89c4b460298b6a1733eaa2005);
+            
+    
+                var lat_lng_popup_10d8aa75e84347fcbfa3ef8c41871f1f = L.popup();
+                function latLngPop(e) {
+                    lat_lng_popup_10d8aa75e84347fcbfa3ef8c41871f1f
+                        .setLatLng(e.latlng)
+                        .setContent("Latitude: " + e.latlng.lat.toFixed(4) +
+                                    "<br>Longitude: " + e.latlng.lng.toFixed(4))
+                        .openOn(map_898edee32e6f4b7fbef8a960984dc820);
+                    }
+                map_898edee32e6f4b7fbef8a960984dc820.on('click', latLngPop);
+            
+    
+        var marker_a99f5411bc554c57af6a6b8080113385 = L.marker(
+            [33.9401, -118.26299999999999],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_898edee32e6f4b7fbef8a960984dc820);
+        
+    
+
+                var icon_9d51de890aa047e985e9eee04ddd9ac5 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_a99f5411bc554c57af6a6b8080113385.setIcon(icon_9d51de890aa047e985e9eee04ddd9ac5);
+            
+    
+                var lat_lng_popup_9089efe9cb2b41e5b65001da38c3968f = L.popup();
+                function latLngPop(e) {
+                    lat_lng_popup_9089efe9cb2b41e5b65001da38c3968f
+                        .setLatLng(e.latlng)
+                        .setContent("Latitude: " + e.latlng.lat.toFixed(4) +
+                                    "<br>Longitude: " + e.latlng.lng.toFixed(4))
+                        .openOn(map_898edee32e6f4b7fbef8a960984dc820);
+                    }
+                map_898edee32e6f4b7fbef8a960984dc820.on('click', latLngPop);
+            
+    
+        var marker_e95eb844edaa4b30af9939d77a5d6ff3 = L.marker(
+            [33.9518, -118.2564],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_898edee32e6f4b7fbef8a960984dc820);
+        
+    
+
+                var icon_93bab64da1834e51b09f694157472b42 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_e95eb844edaa4b30af9939d77a5d6ff3.setIcon(icon_93bab64da1834e51b09f694157472b42);
+            
+    
+                var lat_lng_popup_865d2860307d497ba3d6dd1f91940443 = L.popup();
+                function latLngPop(e) {
+                    lat_lng_popup_865d2860307d497ba3d6dd1f91940443
+                        .setLatLng(e.latlng)
+                        .setContent("Latitude: " + e.latlng.lat.toFixed(4) +
+                                    "<br>Longitude: " + e.latlng.lng.toFixed(4))
+                        .openOn(map_898edee32e6f4b7fbef8a960984dc820);
+                    }
+                map_898edee32e6f4b7fbef8a960984dc820.on('click', latLngPop);
+            
+    
+        var marker_339176403a894dbd9ae30d92981bed94 = L.marker(
+            [33.946999999999996, -118.2684],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_898edee32e6f4b7fbef8a960984dc820);
+        
+    
+
+                var icon_aee68974180a4af7a2dd03600ec1656e = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_339176403a894dbd9ae30d92981bed94.setIcon(icon_aee68974180a4af7a2dd03600ec1656e);
+            
+    
+                var lat_lng_popup_2f7c728d9e9440c8b710f11baf0f75f4 = L.popup();
+                function latLngPop(e) {
+                    lat_lng_popup_2f7c728d9e9440c8b710f11baf0f75f4
+                        .setLatLng(e.latlng)
+                        .setContent("Latitude: " + e.latlng.lat.toFixed(4) +
+                                    "<br>Longitude: " + e.latlng.lng.toFixed(4))
+                        .openOn(map_898edee32e6f4b7fbef8a960984dc820);
+                    }
+                map_898edee32e6f4b7fbef8a960984dc820.on('click', latLngPop);
+            
+    
+        var marker_f6415dbb3ed448b0af5269650e2c902d = L.marker(
+            [33.9484, -118.26299999999999],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_898edee32e6f4b7fbef8a960984dc820);
+        
+    
+
+                var icon_42059d0a3ea44925973df3185b838105 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_f6415dbb3ed448b0af5269650e2c902d.setIcon(icon_42059d0a3ea44925973df3185b838105);
+            
+    
+                var lat_lng_popup_fd2629f5a65c478a81865e32e1dcd6b6 = L.popup();
+                function latLngPop(e) {
+                    lat_lng_popup_fd2629f5a65c478a81865e32e1dcd6b6
+                        .setLatLng(e.latlng)
+                        .setContent("Latitude: " + e.latlng.lat.toFixed(4) +
+                                    "<br>Longitude: " + e.latlng.lng.toFixed(4))
+                        .openOn(map_898edee32e6f4b7fbef8a960984dc820);
+                    }
+                map_898edee32e6f4b7fbef8a960984dc820.on('click', latLngPop);
+            
+    
+        var marker_5e5955c486874576899b96485863c808 = L.marker(
+            [33.9518, -118.2564],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_898edee32e6f4b7fbef8a960984dc820);
+        
+    
+
+                var icon_a86084a11bb3462d9558f357d3fe631e = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_5e5955c486874576899b96485863c808.setIcon(icon_a86084a11bb3462d9558f357d3fe631e);
+            
+    
+                var lat_lng_popup_4447b468e73f4327baf7524e0d63dece = L.popup();
+                function latLngPop(e) {
+                    lat_lng_popup_4447b468e73f4327baf7524e0d63dece
+                        .setLatLng(e.latlng)
+                        .setContent("Latitude: " + e.latlng.lat.toFixed(4) +
+                                    "<br>Longitude: " + e.latlng.lng.toFixed(4))
+                        .openOn(map_898edee32e6f4b7fbef8a960984dc820);
+                    }
+                map_898edee32e6f4b7fbef8a960984dc820.on('click', latLngPop);
+            
+    
+        var marker_4af1e847050141e68bd8bf1c51c321b7 = L.marker(
+            [33.9574, -118.2564],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_898edee32e6f4b7fbef8a960984dc820);
+        
+    
+
+                var icon_aa2145bc70954f9989e5f78585b58e1a = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_4af1e847050141e68bd8bf1c51c321b7.setIcon(icon_aa2145bc70954f9989e5f78585b58e1a);
+            
+    
+                var lat_lng_popup_afe741302f9e455a9077b9f523f9a9f0 = L.popup();
+                function latLngPop(e) {
+                    lat_lng_popup_afe741302f9e455a9077b9f523f9a9f0
+                        .setLatLng(e.latlng)
+                        .setContent("Latitude: " + e.latlng.lat.toFixed(4) +
+                                    "<br>Longitude: " + e.latlng.lng.toFixed(4))
+                        .openOn(map_898edee32e6f4b7fbef8a960984dc820);
+                    }
+                map_898edee32e6f4b7fbef8a960984dc820.on('click', latLngPop);
+            
+    
+        var marker_2c870c5b09b0458a960b0bddfd0be417 = L.marker(
+            [33.9484, -118.2586],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_898edee32e6f4b7fbef8a960984dc820);
+        
+    
+
+                var icon_03560dafedac422b943e1f5cd8123725 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_2c870c5b09b0458a960b0bddfd0be417.setIcon(icon_03560dafedac422b943e1f5cd8123725);
+            
+    
+                var lat_lng_popup_479ddd95ee2b41f4baae3c6ccbb36f65 = L.popup();
+                function latLngPop(e) {
+                    lat_lng_popup_479ddd95ee2b41f4baae3c6ccbb36f65
+                        .setLatLng(e.latlng)
+                        .setContent("Latitude: " + e.latlng.lat.toFixed(4) +
+                                    "<br>Longitude: " + e.latlng.lng.toFixed(4))
+                        .openOn(map_898edee32e6f4b7fbef8a960984dc820);
+                    }
+                map_898edee32e6f4b7fbef8a960984dc820.on('click', latLngPop);
+            
+    
+        var marker_768d1e5d995a455d9383418d824aef4c = L.marker(
+            [33.9433, -118.2462],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_898edee32e6f4b7fbef8a960984dc820);
+        
+    
+
+                var icon_2ec0ad177f934c0e84f9b81b9b62a583 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_768d1e5d995a455d9383418d824aef4c.setIcon(icon_2ec0ad177f934c0e84f9b81b9b62a583);
+            
+    
+                var lat_lng_popup_4bc6b505790b4763aea3640fda292a8b = L.popup();
+                function latLngPop(e) {
+                    lat_lng_popup_4bc6b505790b4763aea3640fda292a8b
+                        .setLatLng(e.latlng)
+                        .setContent("Latitude: " + e.latlng.lat.toFixed(4) +
+                                    "<br>Longitude: " + e.latlng.lng.toFixed(4))
+                        .openOn(map_898edee32e6f4b7fbef8a960984dc820);
+                    }
+                map_898edee32e6f4b7fbef8a960984dc820.on('click', latLngPop);
+            
+    
+        var marker_d130fe1a7b844d7e8abf4ee60cfe3707 = L.marker(
+            [33.9512, -118.2476],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_898edee32e6f4b7fbef8a960984dc820);
+        
+    
+
+                var icon_d1aeb8c2da83483abb58c4dd7ee142ef = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_d130fe1a7b844d7e8abf4ee60cfe3707.setIcon(icon_d1aeb8c2da83483abb58c4dd7ee142ef);
+            
+    
+                var lat_lng_popup_c28a0754f42f4dcf925162fc4a2aad06 = L.popup();
+                function latLngPop(e) {
+                    lat_lng_popup_c28a0754f42f4dcf925162fc4a2aad06
+                        .setLatLng(e.latlng)
+                        .setContent("Latitude: " + e.latlng.lat.toFixed(4) +
+                                    "<br>Longitude: " + e.latlng.lng.toFixed(4))
+                        .openOn(map_898edee32e6f4b7fbef8a960984dc820);
+                    }
+                map_898edee32e6f4b7fbef8a960984dc820.on('click', latLngPop);
+            
+    
+        var marker_a068909aff6442b5a774844988daaa85 = L.marker(
+            [33.9429, -118.2652],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_898edee32e6f4b7fbef8a960984dc820);
+        
+    
+
+                var icon_84501beccea74f98896109b02673a80f = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_a068909aff6442b5a774844988daaa85.setIcon(icon_84501beccea74f98896109b02673a80f);
+            
+    
+                var lat_lng_popup_454dd559160147849ec1a0f07796bb87 = L.popup();
+                function latLngPop(e) {
+                    lat_lng_popup_454dd559160147849ec1a0f07796bb87
+                        .setLatLng(e.latlng)
+                        .setContent("Latitude: " + e.latlng.lat.toFixed(4) +
+                                    "<br>Longitude: " + e.latlng.lng.toFixed(4))
+                        .openOn(map_898edee32e6f4b7fbef8a960984dc820);
+                    }
+                map_898edee32e6f4b7fbef8a960984dc820.on('click', latLngPop);
+            
+    
+        var marker_b215312fed2f44bdafbb5f265e4fb74b = L.marker(
+            [33.9419, -118.2541],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_898edee32e6f4b7fbef8a960984dc820);
+        
+    
+
+                var icon_29ed3fd80e4f4347812d8c2fb57d7667 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_b215312fed2f44bdafbb5f265e4fb74b.setIcon(icon_29ed3fd80e4f4347812d8c2fb57d7667);
+            
+    
+                var lat_lng_popup_8c6056d12f3e42a58faaf63c77dacb1f = L.popup();
+                function latLngPop(e) {
+                    lat_lng_popup_8c6056d12f3e42a58faaf63c77dacb1f
+                        .setLatLng(e.latlng)
+                        .setContent("Latitude: " + e.latlng.lat.toFixed(4) +
+                                    "<br>Longitude: " + e.latlng.lng.toFixed(4))
+                        .openOn(map_898edee32e6f4b7fbef8a960984dc820);
+                    }
+                map_898edee32e6f4b7fbef8a960984dc820.on('click', latLngPop);
+            
+    
+        var marker_77ee52011adf47a1b5023f5686aeb8f1 = L.marker(
+            [33.9456, -118.2323],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_898edee32e6f4b7fbef8a960984dc820);
+        
+    
+
+                var icon_a14c07c9a16143f5b41ed593372623ff = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_77ee52011adf47a1b5023f5686aeb8f1.setIcon(icon_a14c07c9a16143f5b41ed593372623ff);
+            
+    
+                var lat_lng_popup_b6c677001275478fb564cdafe77a70b8 = L.popup();
+                function latLngPop(e) {
+                    lat_lng_popup_b6c677001275478fb564cdafe77a70b8
+                        .setLatLng(e.latlng)
+                        .setContent("Latitude: " + e.latlng.lat.toFixed(4) +
+                                    "<br>Longitude: " + e.latlng.lng.toFixed(4))
+                        .openOn(map_898edee32e6f4b7fbef8a960984dc820);
+                    }
+                map_898edee32e6f4b7fbef8a960984dc820.on('click', latLngPop);
+            
+    
+        var marker_0bfc7017def4495a8d60615231abc321 = L.marker(
+            [33.9565, -118.26299999999999],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_898edee32e6f4b7fbef8a960984dc820);
+        
+    
+
+                var icon_9275044fefa647b7becb265a5e125274 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_0bfc7017def4495a8d60615231abc321.setIcon(icon_9275044fefa647b7becb265a5e125274);
+            
+    
+                var lat_lng_popup_55f6be2b34954270840c60ff472c048d = L.popup();
+                function latLngPop(e) {
+                    lat_lng_popup_55f6be2b34954270840c60ff472c048d
+                        .setLatLng(e.latlng)
+                        .setContent("Latitude: " + e.latlng.lat.toFixed(4) +
+                                    "<br>Longitude: " + e.latlng.lng.toFixed(4))
+                        .openOn(map_898edee32e6f4b7fbef8a960984dc820);
+                    }
+                map_898edee32e6f4b7fbef8a960984dc820.on('click', latLngPop);
+            
+    
+        var marker_752abf8a5aa446a49944beaa30a375d5 = L.marker(
+            [33.9471, -118.2348],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_898edee32e6f4b7fbef8a960984dc820);
+        
+    
+
+                var icon_ce9c1ba823934b5aabd7c0859285ff7e = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_752abf8a5aa446a49944beaa30a375d5.setIcon(icon_ce9c1ba823934b5aabd7c0859285ff7e);
+            
+    
+                var lat_lng_popup_91b7eb8cee5247afb43aba0c8b895899 = L.popup();
+                function latLngPop(e) {
+                    lat_lng_popup_91b7eb8cee5247afb43aba0c8b895899
+                        .setLatLng(e.latlng)
+                        .setContent("Latitude: " + e.latlng.lat.toFixed(4) +
+                                    "<br>Longitude: " + e.latlng.lng.toFixed(4))
+                        .openOn(map_898edee32e6f4b7fbef8a960984dc820);
+                    }
+                map_898edee32e6f4b7fbef8a960984dc820.on('click', latLngPop);
+            
+    
+        var marker_6665644e16a1419fbf16d0f98dc98042 = L.marker(
+            [33.9523, -118.2476],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_898edee32e6f4b7fbef8a960984dc820);
+        
+    
+
+                var icon_c19ccd16092c4d5f8005a3ed4f46d71a = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_6665644e16a1419fbf16d0f98dc98042.setIcon(icon_c19ccd16092c4d5f8005a3ed4f46d71a);
+            
+    
+                var lat_lng_popup_bf146bb7eb3e4e3abd7ce97b681e8118 = L.popup();
+                function latLngPop(e) {
+                    lat_lng_popup_bf146bb7eb3e4e3abd7ce97b681e8118
+                        .setLatLng(e.latlng)
+                        .setContent("Latitude: " + e.latlng.lat.toFixed(4) +
+                                    "<br>Longitude: " + e.latlng.lng.toFixed(4))
+                        .openOn(map_898edee32e6f4b7fbef8a960984dc820);
+                    }
+                map_898edee32e6f4b7fbef8a960984dc820.on('click', latLngPop);
+            
+</script>

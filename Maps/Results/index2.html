@@ -1,0 +1,1761 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS=false; L_NO_TOUCH=false; L_DISABLE_3D=false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawgit.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+    <style>#map_be928ca808a04c319de09cbed0c65463 {
+        position: relative;
+        width: 100.0%;
+        height: 100.0%;
+        left: 0.0%;
+        top: 0.0%;
+        }
+    </style>
+</head>
+<body>    
+    
+    <div class="folium-map" id="map_be928ca808a04c319de09cbed0c65463" ></div>
+</body>
+<script>    
+    
+    
+        var bounds = null;
+    
+
+    var map_be928ca808a04c319de09cbed0c65463 = L.map(
+        'map_be928ca808a04c319de09cbed0c65463', {
+        center: [34.009, -118.2424],
+        zoom: 12,
+        maxBounds: bounds,
+        layers: [],
+        worldCopyJump: false,
+        crs: L.CRS.EPSG3857,
+        zoomControl: true,
+        });
+
+    
+    
+    var tile_layer_2569a91e95d445e39bcfe0d56591e82e = L.tileLayer(
+        'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+        {
+        "attribution": null,
+        "detectRetina": false,
+        "maxNativeZoom": 18,
+        "maxZoom": 18,
+        "minZoom": 0,
+        "noWrap": false,
+        "subdomains": "abc"
+}).addTo(map_be928ca808a04c319de09cbed0c65463);
+    
+        var marker_739f1dbb3956430baef7b12b82ef6e03 = L.marker(
+            [33.9638, -118.2575],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_be928ca808a04c319de09cbed0c65463);
+        
+    
+
+                var icon_9395e41f5dd64b8898d1c1a149a3e577 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_739f1dbb3956430baef7b12b82ef6e03.setIcon(icon_9395e41f5dd64b8898d1c1a149a3e577);
+            
+    
+            var popup_d8cf82afb985445f8bad369e17419613 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_7d3b5589c29e4491a77eb0f5a5e67ebf = $('<div id="html_7d3b5589c29e4491a77eb0f5a5e67ebf" style="width: 100.0%; height: 100.0%;">CRIMINAL HOMICIDE</div>')[0];
+                popup_d8cf82afb985445f8bad369e17419613.setContent(html_7d3b5589c29e4491a77eb0f5a5e67ebf);
+            
+
+            marker_739f1dbb3956430baef7b12b82ef6e03.bindPopup(popup_d8cf82afb985445f8bad369e17419613)
+            ;
+
+            
+        
+    
+        var marker_e85301a39f424b8fa351183b097486de = L.marker(
+            [33.961999999999996, -118.2575],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_be928ca808a04c319de09cbed0c65463);
+        
+    
+
+                var icon_9f3bae80538747669839ebba89f5572f = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_e85301a39f424b8fa351183b097486de.setIcon(icon_9f3bae80538747669839ebba89f5572f);
+            
+    
+            var popup_c1f1a5cbd82d492fbd09190dc0b6fb29 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_80b8591d922544dab2d4eefdc5579b89 = $('<div id="html_80b8591d922544dab2d4eefdc5579b89" style="width: 100.0%; height: 100.0%;">CRIMINAL HOMICIDE</div>')[0];
+                popup_c1f1a5cbd82d492fbd09190dc0b6fb29.setContent(html_80b8591d922544dab2d4eefdc5579b89);
+            
+
+            marker_e85301a39f424b8fa351183b097486de.bindPopup(popup_c1f1a5cbd82d492fbd09190dc0b6fb29)
+            ;
+
+            
+        
+    
+        var marker_a36c541f015548999c997552a7eab1d7 = L.marker(
+            [33.961999999999996, -118.2575],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_be928ca808a04c319de09cbed0c65463);
+        
+    
+
+                var icon_b0190d07ea354a0382ef71e6a0b0c889 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_a36c541f015548999c997552a7eab1d7.setIcon(icon_b0190d07ea354a0382ef71e6a0b0c889);
+            
+    
+            var popup_f6dee16c6e9b48dab50c133817bcd1c3 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_dfd4e63c2ff84441a7c05198a4815228 = $('<div id="html_dfd4e63c2ff84441a7c05198a4815228" style="width: 100.0%; height: 100.0%;">CRIMINAL HOMICIDE</div>')[0];
+                popup_f6dee16c6e9b48dab50c133817bcd1c3.setContent(html_dfd4e63c2ff84441a7c05198a4815228);
+            
+
+            marker_a36c541f015548999c997552a7eab1d7.bindPopup(popup_f6dee16c6e9b48dab50c133817bcd1c3)
+            ;
+
+            
+        
+    
+        var marker_12303fec8d4b49738d5d5face75b260c = L.marker(
+            [33.9638, -118.2586],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_be928ca808a04c319de09cbed0c65463);
+        
+    
+
+                var icon_5f9cff63cb574b5a841f0d834a847ae1 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_12303fec8d4b49738d5d5face75b260c.setIcon(icon_5f9cff63cb574b5a841f0d834a847ae1);
+            
+    
+            var popup_449eb3077f62466dbaab9962058ba47b = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_8046315d4efe498cb1f5847e3c16c374 = $('<div id="html_8046315d4efe498cb1f5847e3c16c374" style="width: 100.0%; height: 100.0%;">ASSAULT WITH DEADLY WEAPON, AGGRAVATED ASSAULT</div>')[0];
+                popup_449eb3077f62466dbaab9962058ba47b.setContent(html_8046315d4efe498cb1f5847e3c16c374);
+            
+
+            marker_12303fec8d4b49738d5d5face75b260c.bindPopup(popup_449eb3077f62466dbaab9962058ba47b)
+            ;
+
+            
+        
+    
+        var marker_c84c97694d904b6b87f0ac7beb256929 = L.marker(
+            [33.9857, -118.2628],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_be928ca808a04c319de09cbed0c65463);
+        
+    
+
+                var icon_1dd39c5a0e86446a9c53eacfed50162e = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_c84c97694d904b6b87f0ac7beb256929.setIcon(icon_1dd39c5a0e86446a9c53eacfed50162e);
+            
+    
+            var popup_53e1c73d61fa4b8d823401b9deb1a388 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_d728c8e7a2c74ceb98e1ba7117177709 = $('<div id="html_d728c8e7a2c74ceb98e1ba7117177709" style="width: 100.0%; height: 100.0%;">BATTERY - SIMPLE ASSAULT</div>')[0];
+                popup_53e1c73d61fa4b8d823401b9deb1a388.setContent(html_d728c8e7a2c74ceb98e1ba7117177709);
+            
+
+            marker_c84c97694d904b6b87f0ac7beb256929.bindPopup(popup_53e1c73d61fa4b8d823401b9deb1a388)
+            ;
+
+            
+        
+    
+        var marker_6832a3a436ce40d391e0fbc656db3288 = L.marker(
+            [33.9857, -118.2628],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_be928ca808a04c319de09cbed0c65463);
+        
+    
+
+                var icon_95cdf7f8d13644649713964287663de8 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_6832a3a436ce40d391e0fbc656db3288.setIcon(icon_95cdf7f8d13644649713964287663de8);
+            
+    
+            var popup_e2d87dacb23745089368b5765bc854a9 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_9026c1817e92416aa3bc86aaf689bb49 = $('<div id="html_9026c1817e92416aa3bc86aaf689bb49" style="width: 100.0%; height: 100.0%;">ASSAULT WITH DEADLY WEAPON, AGGRAVATED ASSAULT</div>')[0];
+                popup_e2d87dacb23745089368b5765bc854a9.setContent(html_9026c1817e92416aa3bc86aaf689bb49);
+            
+
+            marker_6832a3a436ce40d391e0fbc656db3288.bindPopup(popup_e2d87dacb23745089368b5765bc854a9)
+            ;
+
+            
+        
+    
+        var marker_c0a8febe946544c485545e82c21fdae2 = L.marker(
+            [33.9845, -118.2589],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_be928ca808a04c319de09cbed0c65463);
+        
+    
+
+                var icon_ca5b36c229444826bad21b61f9fe81b2 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_c0a8febe946544c485545e82c21fdae2.setIcon(icon_ca5b36c229444826bad21b61f9fe81b2);
+            
+    
+            var popup_c639adb6c8d243e098871384b19e1c33 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_aba1fa4c8ecf4bf5acb6db4756650ec1 = $('<div id="html_aba1fa4c8ecf4bf5acb6db4756650ec1" style="width: 100.0%; height: 100.0%;">ASSAULT WITH DEADLY WEAPON, AGGRAVATED ASSAULT</div>')[0];
+                popup_c639adb6c8d243e098871384b19e1c33.setContent(html_aba1fa4c8ecf4bf5acb6db4756650ec1);
+            
+
+            marker_c0a8febe946544c485545e82c21fdae2.bindPopup(popup_c639adb6c8d243e098871384b19e1c33)
+            ;
+
+            
+        
+    
+        var marker_6e7d5b967de448b3b62ba5c766d18c74 = L.marker(
+            [33.9712, -118.2564],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_be928ca808a04c319de09cbed0c65463);
+        
+    
+
+                var icon_7a1db0b68ee347ec927e063c6ed07b4a = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_6e7d5b967de448b3b62ba5c766d18c74.setIcon(icon_7a1db0b68ee347ec927e063c6ed07b4a);
+            
+    
+            var popup_8cfe7b09caf64cfdbe632f6995e3a73e = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_faa531d3aad3498da2a80d97803668f7 = $('<div id="html_faa531d3aad3498da2a80d97803668f7" style="width: 100.0%; height: 100.0%;">ASSAULT WITH DEADLY WEAPON, AGGRAVATED ASSAULT</div>')[0];
+                popup_8cfe7b09caf64cfdbe632f6995e3a73e.setContent(html_faa531d3aad3498da2a80d97803668f7);
+            
+
+            marker_6e7d5b967de448b3b62ba5c766d18c74.bindPopup(popup_8cfe7b09caf64cfdbe632f6995e3a73e)
+            ;
+
+            
+        
+    
+        var marker_c175a4b07a3140af99a9ea4d56bc2b08 = L.marker(
+            [33.973, -118.2608],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_be928ca808a04c319de09cbed0c65463);
+        
+    
+
+                var icon_b0eb71527c35421eb8350796f7902df0 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_c175a4b07a3140af99a9ea4d56bc2b08.setIcon(icon_b0eb71527c35421eb8350796f7902df0);
+            
+    
+            var popup_759563760cc24764befcd2801122f1e1 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_7376dfad611e45cca0c4fb2cc2f23bae = $('<div id="html_7376dfad611e45cca0c4fb2cc2f23bae" style="width: 100.0%; height: 100.0%;">ASSAULT WITH DEADLY WEAPON, AGGRAVATED ASSAULT</div>')[0];
+                popup_759563760cc24764befcd2801122f1e1.setContent(html_7376dfad611e45cca0c4fb2cc2f23bae);
+            
+
+            marker_c175a4b07a3140af99a9ea4d56bc2b08.bindPopup(popup_759563760cc24764befcd2801122f1e1)
+            ;
+
+            
+        
+    
+        var marker_376f26a201034be7a07fab980eee1e16 = L.marker(
+            [33.9712, -118.2564],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_be928ca808a04c319de09cbed0c65463);
+        
+    
+
+                var icon_2047be2397544c2598dbfba04a2f9c12 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_376f26a201034be7a07fab980eee1e16.setIcon(icon_2047be2397544c2598dbfba04a2f9c12);
+            
+    
+            var popup_e57470a38cef41989ea01450f233b87d = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_4143fa313b4e4a30a5dd8291077b8878 = $('<div id="html_4143fa313b4e4a30a5dd8291077b8878" style="width: 100.0%; height: 100.0%;">BATTERY POLICE (SIMPLE)</div>')[0];
+                popup_e57470a38cef41989ea01450f233b87d.setContent(html_4143fa313b4e4a30a5dd8291077b8878);
+            
+
+            marker_376f26a201034be7a07fab980eee1e16.bindPopup(popup_e57470a38cef41989ea01450f233b87d)
+            ;
+
+            
+        
+    
+        var marker_a327bb15168640bdaa8b4c7a19d60502 = L.marker(
+            [33.973, -118.2575],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_be928ca808a04c319de09cbed0c65463);
+        
+    
+
+                var icon_f22305e42dec429cb140ebed5b7e1fad = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_a327bb15168640bdaa8b4c7a19d60502.setIcon(icon_f22305e42dec429cb140ebed5b7e1fad);
+            
+    
+            var popup_f5050650fead497483d0fbcc2c497da1 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_977dd2f248064500bfbf4b002199c133 = $('<div id="html_977dd2f248064500bfbf4b002199c133" style="width: 100.0%; height: 100.0%;">BATTERY - SIMPLE ASSAULT</div>')[0];
+                popup_f5050650fead497483d0fbcc2c497da1.setContent(html_977dd2f248064500bfbf4b002199c133);
+            
+
+            marker_a327bb15168640bdaa8b4c7a19d60502.bindPopup(popup_f5050650fead497483d0fbcc2c497da1)
+            ;
+
+            
+        
+    
+        var marker_dad974a112fc4000b1cfc09709841015 = L.marker(
+            [33.9638, -118.2586],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_be928ca808a04c319de09cbed0c65463);
+        
+    
+
+                var icon_625457b595834520a68a36ae6c32943e = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_dad974a112fc4000b1cfc09709841015.setIcon(icon_625457b595834520a68a36ae6c32943e);
+            
+    
+            var popup_74b074cca53f4342b6336d403fea69d3 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_2950a4185809496a847185d2d094c5bd = $('<div id="html_2950a4185809496a847185d2d094c5bd" style="width: 100.0%; height: 100.0%;">BATTERY - SIMPLE ASSAULT</div>')[0];
+                popup_74b074cca53f4342b6336d403fea69d3.setContent(html_2950a4185809496a847185d2d094c5bd);
+            
+
+            marker_dad974a112fc4000b1cfc09709841015.bindPopup(popup_74b074cca53f4342b6336d403fea69d3)
+            ;
+
+            
+        
+    
+        var marker_6ed8c4d02b2c4273a27d8f996931544f = L.marker(
+            [33.961999999999996, -118.2575],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_be928ca808a04c319de09cbed0c65463);
+        
+    
+
+                var icon_4047b66560cc4bfb9f4ae07aef57250e = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_6ed8c4d02b2c4273a27d8f996931544f.setIcon(icon_4047b66560cc4bfb9f4ae07aef57250e);
+            
+    
+            var popup_415b618e8ab146d384cd7bd49aad7be3 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_182ff247cfa740f6a04db9f249eb6a92 = $('<div id="html_182ff247cfa740f6a04db9f249eb6a92" style="width: 100.0%; height: 100.0%;">BATTERY - SIMPLE ASSAULT</div>')[0];
+                popup_415b618e8ab146d384cd7bd49aad7be3.setContent(html_182ff247cfa740f6a04db9f249eb6a92);
+            
+
+            marker_6ed8c4d02b2c4273a27d8f996931544f.bindPopup(popup_415b618e8ab146d384cd7bd49aad7be3)
+            ;
+
+            
+        
+    
+        var marker_84c7f76f23334ec98412e427f92aa6cb = L.marker(
+            [33.973, -118.2608],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_be928ca808a04c319de09cbed0c65463);
+        
+    
+
+                var icon_bc0edaaea0924a59ba3d7a08ff48b247 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_84c7f76f23334ec98412e427f92aa6cb.setIcon(icon_bc0edaaea0924a59ba3d7a08ff48b247);
+            
+    
+            var popup_3c110d7e12714abd9be36f03dc613c5d = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_0a0049c9113f4194b14173d96c6e53d8 = $('<div id="html_0a0049c9113f4194b14173d96c6e53d8" style="width: 100.0%; height: 100.0%;">ASSAULT WITH DEADLY WEAPON, AGGRAVATED ASSAULT</div>')[0];
+                popup_3c110d7e12714abd9be36f03dc613c5d.setContent(html_0a0049c9113f4194b14173d96c6e53d8);
+            
+
+            marker_84c7f76f23334ec98412e427f92aa6cb.bindPopup(popup_3c110d7e12714abd9be36f03dc613c5d)
+            ;
+
+            
+        
+    
+        var marker_005a98ea1cff4934af0b7f8c173f57a8 = L.marker(
+            [33.9892, -118.2412],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_be928ca808a04c319de09cbed0c65463);
+        
+    
+
+                var icon_179eebab2af74f6e8a9ca4af354e2288 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_005a98ea1cff4934af0b7f8c173f57a8.setIcon(icon_179eebab2af74f6e8a9ca4af354e2288);
+            
+    
+            var popup_d1d1e03941184a688d0fa63c9c9c7cef = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_84ea5405d6fd42ee81e18785b41506bb = $('<div id="html_84ea5405d6fd42ee81e18785b41506bb" style="width: 100.0%; height: 100.0%;">ASSAULT WITH DEADLY WEAPON, AGGRAVATED ASSAULT</div>')[0];
+                popup_d1d1e03941184a688d0fa63c9c9c7cef.setContent(html_84ea5405d6fd42ee81e18785b41506bb);
+            
+
+            marker_005a98ea1cff4934af0b7f8c173f57a8.bindPopup(popup_d1d1e03941184a688d0fa63c9c9c7cef)
+            ;
+
+            
+        
+    
+        var marker_d3c28f476a574a189fa2a2e5bc02a0a2 = L.marker(
+            [33.9857, -118.2628],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_be928ca808a04c319de09cbed0c65463);
+        
+    
+
+                var icon_908b4608f4344889ba4ef3ae9980b085 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_d3c28f476a574a189fa2a2e5bc02a0a2.setIcon(icon_908b4608f4344889ba4ef3ae9980b085);
+            
+    
+            var popup_9cf794facae2442e8f7c0e7a04e09b21 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_0c55f4a287ed4fc3b4d19505adc65335 = $('<div id="html_0c55f4a287ed4fc3b4d19505adc65335" style="width: 100.0%; height: 100.0%;">ASSAULT WITH DEADLY WEAPON, AGGRAVATED ASSAULT</div>')[0];
+                popup_9cf794facae2442e8f7c0e7a04e09b21.setContent(html_0c55f4a287ed4fc3b4d19505adc65335);
+            
+
+            marker_d3c28f476a574a189fa2a2e5bc02a0a2.bindPopup(popup_9cf794facae2442e8f7c0e7a04e09b21)
+            ;
+
+            
+        
+    
+        var marker_26cda677582c4519b1eb5efa061752e4 = L.marker(
+            [33.9857, -118.2628],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_be928ca808a04c319de09cbed0c65463);
+        
+    
+
+                var icon_bdd926b1c7984e7db37e6039fc83a224 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_26cda677582c4519b1eb5efa061752e4.setIcon(icon_bdd926b1c7984e7db37e6039fc83a224);
+            
+    
+            var popup_be963473b259470190258e64d7202389 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_7fa3c3774deb4aed8d04f2369e0e433a = $('<div id="html_7fa3c3774deb4aed8d04f2369e0e433a" style="width: 100.0%; height: 100.0%;">ASSAULT WITH DEADLY WEAPON, AGGRAVATED ASSAULT</div>')[0];
+                popup_be963473b259470190258e64d7202389.setContent(html_7fa3c3774deb4aed8d04f2369e0e433a);
+            
+
+            marker_26cda677582c4519b1eb5efa061752e4.bindPopup(popup_be963473b259470190258e64d7202389)
+            ;
+
+            
+        
+    
+        var marker_da9981825fe3460692e841941fc33c41 = L.marker(
+            [33.9721, -118.2608],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_be928ca808a04c319de09cbed0c65463);
+        
+    
+
+                var icon_7b8002e42a404c80a903b2882d8a2512 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_da9981825fe3460692e841941fc33c41.setIcon(icon_7b8002e42a404c80a903b2882d8a2512);
+            
+    
+            var popup_bd4b384686e8457aaaefb6532b622097 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_3f5d894739604b328117cf8ca37eed5e = $('<div id="html_3f5d894739604b328117cf8ca37eed5e" style="width: 100.0%; height: 100.0%;">RAPE, FORCIBLE</div>')[0];
+                popup_bd4b384686e8457aaaefb6532b622097.setContent(html_3f5d894739604b328117cf8ca37eed5e);
+            
+
+            marker_da9981825fe3460692e841941fc33c41.bindPopup(popup_bd4b384686e8457aaaefb6532b622097)
+            ;
+
+            
+        
+    
+        var marker_0b6c540311464069995d966b05d52914 = L.marker(
+            [33.9638, -118.2586],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_be928ca808a04c319de09cbed0c65463);
+        
+    
+
+                var icon_eacc543cdadb4d65b74a16a722488023 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_0b6c540311464069995d966b05d52914.setIcon(icon_eacc543cdadb4d65b74a16a722488023);
+            
+    
+            var popup_36c3bbe6fe26482d9c45a233ccad4cd3 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_15ce440aaae440ae8623b9420a0c237a = $('<div id="html_15ce440aaae440ae8623b9420a0c237a" style="width: 100.0%; height: 100.0%;">ASSAULT WITH DEADLY WEAPON, AGGRAVATED ASSAULT</div>')[0];
+                popup_36c3bbe6fe26482d9c45a233ccad4cd3.setContent(html_15ce440aaae440ae8623b9420a0c237a);
+            
+
+            marker_0b6c540311464069995d966b05d52914.bindPopup(popup_36c3bbe6fe26482d9c45a233ccad4cd3)
+            ;
+
+            
+        
+    
+        var marker_9103e32b7bb34c61b341a87c354c6e42 = L.marker(
+            [33.9721, -118.2608],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_be928ca808a04c319de09cbed0c65463);
+        
+    
+
+                var icon_04a066bd644344bc839a859bfaca53f3 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_9103e32b7bb34c61b341a87c354c6e42.setIcon(icon_04a066bd644344bc839a859bfaca53f3);
+            
+    
+            var popup_c6360f0fdcd2477d882c41196d3e4095 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_b780a232e9524761bf050c78be3f8938 = $('<div id="html_b780a232e9524761bf050c78be3f8938" style="width: 100.0%; height: 100.0%;">BATTERY - SIMPLE ASSAULT</div>')[0];
+                popup_c6360f0fdcd2477d882c41196d3e4095.setContent(html_b780a232e9524761bf050c78be3f8938);
+            
+
+            marker_9103e32b7bb34c61b341a87c354c6e42.bindPopup(popup_c6360f0fdcd2477d882c41196d3e4095)
+            ;
+
+            
+        
+    
+        var marker_54951a2ff15749a4b50bf28998260c35 = L.marker(
+            [33.9675, -118.2586],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_be928ca808a04c319de09cbed0c65463);
+        
+    
+
+                var icon_c63dd7ab41934f5c826879426d062cc2 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_54951a2ff15749a4b50bf28998260c35.setIcon(icon_c63dd7ab41934f5c826879426d062cc2);
+            
+    
+            var popup_d0cc2f96caaf4a61ba0d83f2242cc055 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_9373a6c06c5e41f48a75fd63b5ba8f2b = $('<div id="html_9373a6c06c5e41f48a75fd63b5ba8f2b" style="width: 100.0%; height: 100.0%;">BATTERY - SIMPLE ASSAULT</div>')[0];
+                popup_d0cc2f96caaf4a61ba0d83f2242cc055.setContent(html_9373a6c06c5e41f48a75fd63b5ba8f2b);
+            
+
+            marker_54951a2ff15749a4b50bf28998260c35.bindPopup(popup_d0cc2f96caaf4a61ba0d83f2242cc055)
+            ;
+
+            
+        
+    
+        var marker_55e8d59e8305402488969f3d1dfe53d3 = L.marker(
+            [33.961999999999996, -118.2564],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_be928ca808a04c319de09cbed0c65463);
+        
+    
+
+                var icon_676306c5c71240229db8b506b361c011 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_55e8d59e8305402488969f3d1dfe53d3.setIcon(icon_676306c5c71240229db8b506b361c011);
+            
+    
+            var popup_15849ea3d5094849829097cac27b7aae = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_b07893ca634548ea90b1d5561dd914b8 = $('<div id="html_b07893ca634548ea90b1d5561dd914b8" style="width: 100.0%; height: 100.0%;">ASSAULT WITH DEADLY WEAPON, AGGRAVATED ASSAULT</div>')[0];
+                popup_15849ea3d5094849829097cac27b7aae.setContent(html_b07893ca634548ea90b1d5561dd914b8);
+            
+
+            marker_55e8d59e8305402488969f3d1dfe53d3.bindPopup(popup_15849ea3d5094849829097cac27b7aae)
+            ;
+
+            
+        
+    
+        var marker_a6a5294c253340388e48a15eedc83d3a = L.marker(
+            [33.961999999999996, -118.2564],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_be928ca808a04c319de09cbed0c65463);
+        
+    
+
+                var icon_b03b374964184931a1e826f03a3f97b3 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_a6a5294c253340388e48a15eedc83d3a.setIcon(icon_b03b374964184931a1e826f03a3f97b3);
+            
+    
+            var popup_5c68f5366a634e3fad31e709c808c745 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_d1a4bd03816b489fa2a1ec94bc918fb4 = $('<div id="html_d1a4bd03816b489fa2a1ec94bc918fb4" style="width: 100.0%; height: 100.0%;">ASSAULT WITH DEADLY WEAPON, AGGRAVATED ASSAULT</div>')[0];
+                popup_5c68f5366a634e3fad31e709c808c745.setContent(html_d1a4bd03816b489fa2a1ec94bc918fb4);
+            
+
+            marker_a6a5294c253340388e48a15eedc83d3a.bindPopup(popup_5c68f5366a634e3fad31e709c808c745)
+            ;
+
+            
+        
+    
+        var marker_a36898c516ad47d98f767ad089f0870d = L.marker(
+            [33.961999999999996, -118.2564],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_be928ca808a04c319de09cbed0c65463);
+        
+    
+
+                var icon_15efafe1b5744ca5806436a6fb47bf2a = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_a36898c516ad47d98f767ad089f0870d.setIcon(icon_15efafe1b5744ca5806436a6fb47bf2a);
+            
+    
+            var popup_a09a6782101d47c7adf3b7330ea7ea74 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_aea1e01cc44d4e0dadbfa5ad3642b11b = $('<div id="html_aea1e01cc44d4e0dadbfa5ad3642b11b" style="width: 100.0%; height: 100.0%;">ASSAULT WITH DEADLY WEAPON, AGGRAVATED ASSAULT</div>')[0];
+                popup_a09a6782101d47c7adf3b7330ea7ea74.setContent(html_aea1e01cc44d4e0dadbfa5ad3642b11b);
+            
+
+            marker_a36898c516ad47d98f767ad089f0870d.bindPopup(popup_a09a6782101d47c7adf3b7330ea7ea74)
+            ;
+
+            
+        
+    
+        var marker_da71ab646065478384c72e93d313a554 = L.marker(
+            [33.9721, -118.2575],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_be928ca808a04c319de09cbed0c65463);
+        
+    
+
+                var icon_48a40ee3d9e04ec4bb0de397ce91c1f7 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_da71ab646065478384c72e93d313a554.setIcon(icon_48a40ee3d9e04ec4bb0de397ce91c1f7);
+            
+    
+            var popup_0d5c801ec5c2476bac003646eeb52342 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_11d3a14cdb6240fdac901166eea0ddd2 = $('<div id="html_11d3a14cdb6240fdac901166eea0ddd2" style="width: 100.0%; height: 100.0%;">ASSAULT WITH DEADLY WEAPON, AGGRAVATED ASSAULT</div>')[0];
+                popup_0d5c801ec5c2476bac003646eeb52342.setContent(html_11d3a14cdb6240fdac901166eea0ddd2);
+            
+
+            marker_da71ab646065478384c72e93d313a554.bindPopup(popup_0d5c801ec5c2476bac003646eeb52342)
+            ;
+
+            
+        
+    
+        var marker_881df934633d433bb1ec1b8ad568f99b = L.marker(
+            [33.973, -118.2608],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_be928ca808a04c319de09cbed0c65463);
+        
+    
+
+                var icon_e8ed9e686e204611a3b0ef6f974420ff = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_881df934633d433bb1ec1b8ad568f99b.setIcon(icon_e8ed9e686e204611a3b0ef6f974420ff);
+            
+    
+            var popup_2e50ec5d21f64158abed68e9224f410b = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_ce5156348b58467780ed002ae414099c = $('<div id="html_ce5156348b58467780ed002ae414099c" style="width: 100.0%; height: 100.0%;">ASSAULT WITH DEADLY WEAPON, AGGRAVATED ASSAULT</div>')[0];
+                popup_2e50ec5d21f64158abed68e9224f410b.setContent(html_ce5156348b58467780ed002ae414099c);
+            
+
+            marker_881df934633d433bb1ec1b8ad568f99b.bindPopup(popup_2e50ec5d21f64158abed68e9224f410b)
+            ;
+
+            
+        
+    
+        var marker_c913af8214de45b89b249892151934c6 = L.marker(
+            [33.961999999999996, -118.2564],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_be928ca808a04c319de09cbed0c65463);
+        
+    
+
+                var icon_0d083d68252542068ffac0c3f550809e = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_c913af8214de45b89b249892151934c6.setIcon(icon_0d083d68252542068ffac0c3f550809e);
+            
+    
+            var popup_2ee09f8c15fd4c6290cad88406c1faa9 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_635aaab2d03c42feb568b20b28752af4 = $('<div id="html_635aaab2d03c42feb568b20b28752af4" style="width: 100.0%; height: 100.0%;">BATTERY - SIMPLE ASSAULT</div>')[0];
+                popup_2ee09f8c15fd4c6290cad88406c1faa9.setContent(html_635aaab2d03c42feb568b20b28752af4);
+            
+
+            marker_c913af8214de45b89b249892151934c6.bindPopup(popup_2ee09f8c15fd4c6290cad88406c1faa9)
+            ;
+
+            
+        
+    
+        var marker_993d4c37bbff442dbbd9ddb629c6ed85 = L.marker(
+            [33.9629, -118.2575],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_be928ca808a04c319de09cbed0c65463);
+        
+    
+
+                var icon_e1a2c70329644e46bc4ee69634bad685 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_993d4c37bbff442dbbd9ddb629c6ed85.setIcon(icon_e1a2c70329644e46bc4ee69634bad685);
+            
+    
+            var popup_057844a52728409ca9f7d9f6554f5de5 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_199a8e2e65e24df2b49aa433fa2fabcf = $('<div id="html_199a8e2e65e24df2b49aa433fa2fabcf" style="width: 100.0%; height: 100.0%;">ASSAULT WITH DEADLY WEAPON, AGGRAVATED ASSAULT</div>')[0];
+                popup_057844a52728409ca9f7d9f6554f5de5.setContent(html_199a8e2e65e24df2b49aa433fa2fabcf);
+            
+
+            marker_993d4c37bbff442dbbd9ddb629c6ed85.bindPopup(popup_057844a52728409ca9f7d9f6554f5de5)
+            ;
+
+            
+        
+    
+        var marker_d1e4cc165c4a4d94bab4b25615e49431 = L.marker(
+            [33.9748, -118.2575],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_be928ca808a04c319de09cbed0c65463);
+        
+    
+
+                var icon_9b4c78024c114c289377d9208bad4aa0 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_d1e4cc165c4a4d94bab4b25615e49431.setIcon(icon_9b4c78024c114c289377d9208bad4aa0);
+            
+    
+            var popup_3a79ada02dd7437ea5469e0f05f3b126 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_43d98555b6144697a5d0ce1645bfff2b = $('<div id="html_43d98555b6144697a5d0ce1645bfff2b" style="width: 100.0%; height: 100.0%;">BATTERY - SIMPLE ASSAULT</div>')[0];
+                popup_3a79ada02dd7437ea5469e0f05f3b126.setContent(html_43d98555b6144697a5d0ce1645bfff2b);
+            
+
+            marker_d1e4cc165c4a4d94bab4b25615e49431.bindPopup(popup_3a79ada02dd7437ea5469e0f05f3b126)
+            ;
+
+            
+        
+    
+        var marker_f4b1816ed5f94040a2c901f8e7315886 = L.marker(
+            [33.9675, -118.2564],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_be928ca808a04c319de09cbed0c65463);
+        
+    
+
+                var icon_b86a9c0e91db427b977d923c8a7ef638 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_f4b1816ed5f94040a2c901f8e7315886.setIcon(icon_b86a9c0e91db427b977d923c8a7ef638);
+            
+    
+            var popup_c1ac0a168a8c48b0bb20e73738737165 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_b7639b4d71724114a5f57e9741a8cba2 = $('<div id="html_b7639b4d71724114a5f57e9741a8cba2" style="width: 100.0%; height: 100.0%;">ASSAULT WITH DEADLY WEAPON, AGGRAVATED ASSAULT</div>')[0];
+                popup_c1ac0a168a8c48b0bb20e73738737165.setContent(html_b7639b4d71724114a5f57e9741a8cba2);
+            
+
+            marker_f4b1816ed5f94040a2c901f8e7315886.bindPopup(popup_c1ac0a168a8c48b0bb20e73738737165)
+            ;
+
+            
+        
+    
+        var marker_2e691aaf1d7c4cbd99955bee96d25e10 = L.marker(
+            [33.961999999999996, -118.2575],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_be928ca808a04c319de09cbed0c65463);
+        
+    
+
+                var icon_5c416954372843f4b8f99ca9586313cc = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_2e691aaf1d7c4cbd99955bee96d25e10.setIcon(icon_5c416954372843f4b8f99ca9586313cc);
+            
+    
+            var popup_6ec93d7a6d244c5ab7bf417f330d6350 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_54e497a073fe4db2a8209287bccd46a5 = $('<div id="html_54e497a073fe4db2a8209287bccd46a5" style="width: 100.0%; height: 100.0%;">CRIMINAL HOMICIDE</div>')[0];
+                popup_6ec93d7a6d244c5ab7bf417f330d6350.setContent(html_54e497a073fe4db2a8209287bccd46a5);
+            
+
+            marker_2e691aaf1d7c4cbd99955bee96d25e10.bindPopup(popup_6ec93d7a6d244c5ab7bf417f330d6350)
+            ;
+
+            
+        
+    
+        var marker_f2ffc68021f24420a30328f7a8f8a682 = L.marker(
+            [33.9715, -118.2564],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_be928ca808a04c319de09cbed0c65463);
+        
+    
+
+                var icon_adf5ae95042d437eab3b99576d8025d8 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_f2ffc68021f24420a30328f7a8f8a682.setIcon(icon_adf5ae95042d437eab3b99576d8025d8);
+            
+    
+            var popup_eb53f3df06264c9186643f251a4935b1 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_598c72c08fd94e1eb0bdcecf55781e0f = $('<div id="html_598c72c08fd94e1eb0bdcecf55781e0f" style="width: 100.0%; height: 100.0%;">BATTERY - SIMPLE ASSAULT</div>')[0];
+                popup_eb53f3df06264c9186643f251a4935b1.setContent(html_598c72c08fd94e1eb0bdcecf55781e0f);
+            
+
+            marker_f2ffc68021f24420a30328f7a8f8a682.bindPopup(popup_eb53f3df06264c9186643f251a4935b1)
+            ;
+
+            
+        
+    
+        var marker_659ffba56e7c4efb81a09b7c66b03a04 = L.marker(
+            [33.973, -118.2608],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_be928ca808a04c319de09cbed0c65463);
+        
+    
+
+                var icon_a19628c20ec84ddf9344ec9c86e4f135 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_659ffba56e7c4efb81a09b7c66b03a04.setIcon(icon_a19628c20ec84ddf9344ec9c86e4f135);
+            
+    
+            var popup_5cc8d56d5e2d476899f7c608612bca29 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_098ca91f49194d609aaf296ae646766a = $('<div id="html_098ca91f49194d609aaf296ae646766a" style="width: 100.0%; height: 100.0%;">ASSAULT WITH DEADLY WEAPON, AGGRAVATED ASSAULT</div>')[0];
+                popup_5cc8d56d5e2d476899f7c608612bca29.setContent(html_098ca91f49194d609aaf296ae646766a);
+            
+
+            marker_659ffba56e7c4efb81a09b7c66b03a04.bindPopup(popup_5cc8d56d5e2d476899f7c608612bca29)
+            ;
+
+            
+        
+    
+        var marker_897f86c757a441a0a1ab085cec317137 = L.marker(
+            [33.9638, -118.2586],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_be928ca808a04c319de09cbed0c65463);
+        
+    
+
+                var icon_3febb8846a5d4f45843e2205c0ea3154 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_897f86c757a441a0a1ab085cec317137.setIcon(icon_3febb8846a5d4f45843e2205c0ea3154);
+            
+    
+            var popup_2eb0803cad444f859ee06b4b23239b69 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_d31a123f98e649438adcb53a81eb52eb = $('<div id="html_d31a123f98e649438adcb53a81eb52eb" style="width: 100.0%; height: 100.0%;">ASSAULT WITH DEADLY WEAPON, AGGRAVATED ASSAULT</div>')[0];
+                popup_2eb0803cad444f859ee06b4b23239b69.setContent(html_d31a123f98e649438adcb53a81eb52eb);
+            
+
+            marker_897f86c757a441a0a1ab085cec317137.bindPopup(popup_2eb0803cad444f859ee06b4b23239b69)
+            ;
+
+            
+        
+    
+        var marker_f772ec2083544dfd888255ffa5636c5d = L.marker(
+            [33.9857, -118.2628],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_be928ca808a04c319de09cbed0c65463);
+        
+    
+
+                var icon_62160741168c4d64a9a76c752ee395b9 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_f772ec2083544dfd888255ffa5636c5d.setIcon(icon_62160741168c4d64a9a76c752ee395b9);
+            
+    
+            var popup_e4147aaf07e64b2eaa126363935477d7 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_e02071e48dfc44bbbfd03ff1019844df = $('<div id="html_e02071e48dfc44bbbfd03ff1019844df" style="width: 100.0%; height: 100.0%;">ASSAULT WITH DEADLY WEAPON, AGGRAVATED ASSAULT</div>')[0];
+                popup_e4147aaf07e64b2eaa126363935477d7.setContent(html_e02071e48dfc44bbbfd03ff1019844df);
+            
+
+            marker_f772ec2083544dfd888255ffa5636c5d.bindPopup(popup_e4147aaf07e64b2eaa126363935477d7)
+            ;
+
+            
+        
+    
+        var marker_78a8734af02641a787682322683b32b2 = L.marker(
+            [33.9857, -118.2628],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_be928ca808a04c319de09cbed0c65463);
+        
+    
+
+                var icon_efb817213f6f47189ee22ddbb20e6ba7 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_78a8734af02641a787682322683b32b2.setIcon(icon_efb817213f6f47189ee22ddbb20e6ba7);
+            
+    
+            var popup_e5063f676c1f4e3b867918d024b7e106 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_f80861c2c9754fcbb3ad7649e6378254 = $('<div id="html_f80861c2c9754fcbb3ad7649e6378254" style="width: 100.0%; height: 100.0%;">ASSAULT WITH DEADLY WEAPON, AGGRAVATED ASSAULT</div>')[0];
+                popup_e5063f676c1f4e3b867918d024b7e106.setContent(html_f80861c2c9754fcbb3ad7649e6378254);
+            
+
+            marker_78a8734af02641a787682322683b32b2.bindPopup(popup_e5063f676c1f4e3b867918d024b7e106)
+            ;
+
+            
+        
+    
+        var marker_53a1b54649de4a2685755fb12a827d0b = L.marker(
+            [33.982, -118.2564],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_be928ca808a04c319de09cbed0c65463);
+        
+    
+
+                var icon_a4326fefbdda45b0b33abfcbf16da4b8 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_53a1b54649de4a2685755fb12a827d0b.setIcon(icon_a4326fefbdda45b0b33abfcbf16da4b8);
+            
+    
+            var popup_8be817d22bd14e61bd157385364f1811 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_5e50acd523944798a36cb817897805a2 = $('<div id="html_5e50acd523944798a36cb817897805a2" style="width: 100.0%; height: 100.0%;">BATTERY - SIMPLE ASSAULT</div>')[0];
+                popup_8be817d22bd14e61bd157385364f1811.setContent(html_5e50acd523944798a36cb817897805a2);
+            
+
+            marker_53a1b54649de4a2685755fb12a827d0b.bindPopup(popup_8be817d22bd14e61bd157385364f1811)
+            ;
+
+            
+        
+    
+        var marker_0c241fba31804a6384714a8abbc85acc = L.marker(
+            [33.9843, -118.2564],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_be928ca808a04c319de09cbed0c65463);
+        
+    
+
+                var icon_4c782caf866c4d95807b45fff5fe80a3 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_0c241fba31804a6384714a8abbc85acc.setIcon(icon_4c782caf866c4d95807b45fff5fe80a3);
+            
+    
+            var popup_5c3f8ca89e7c4a0e91ce3805df24f762 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_40277b3830a445ca9df7b52bbaa3e6a5 = $('<div id="html_40277b3830a445ca9df7b52bbaa3e6a5" style="width: 100.0%; height: 100.0%;">BATTERY - SIMPLE ASSAULT</div>')[0];
+                popup_5c3f8ca89e7c4a0e91ce3805df24f762.setContent(html_40277b3830a445ca9df7b52bbaa3e6a5);
+            
+
+            marker_0c241fba31804a6384714a8abbc85acc.bindPopup(popup_5c3f8ca89e7c4a0e91ce3805df24f762)
+            ;
+
+            
+        
+    
+        var marker_21ded196fd974226a4a31a035db58ebc = L.marker(
+            [33.9845, -118.2589],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_be928ca808a04c319de09cbed0c65463);
+        
+    
+
+                var icon_513d82f90b4f423388fe1a50e3f53067 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_21ded196fd974226a4a31a035db58ebc.setIcon(icon_513d82f90b4f423388fe1a50e3f53067);
+            
+    
+            var popup_4407b3f2b30547e3ab64f23610a16e11 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_78538538428d484fac9ee881cc74b4f8 = $('<div id="html_78538538428d484fac9ee881cc74b4f8" style="width: 100.0%; height: 100.0%;">ASSAULT WITH DEADLY WEAPON, AGGRAVATED ASSAULT</div>')[0];
+                popup_4407b3f2b30547e3ab64f23610a16e11.setContent(html_78538538428d484fac9ee881cc74b4f8);
+            
+
+            marker_21ded196fd974226a4a31a035db58ebc.bindPopup(popup_4407b3f2b30547e3ab64f23610a16e11)
+            ;
+
+            
+        
+    
+        var marker_6812c468eace4c3d8d02ccd57d0cc47c = L.marker(
+            [33.982, -118.2564],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_be928ca808a04c319de09cbed0c65463);
+        
+    
+
+                var icon_27bafa5f93e047f29081f22921afda37 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_6812c468eace4c3d8d02ccd57d0cc47c.setIcon(icon_27bafa5f93e047f29081f22921afda37);
+            
+    
+            var popup_f500abcfe76a458c863db91f588be841 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_0508a0e9c77146059e6439fe0128ec3f = $('<div id="html_0508a0e9c77146059e6439fe0128ec3f" style="width: 100.0%; height: 100.0%;">ASSAULT WITH DEADLY WEAPON, AGGRAVATED ASSAULT</div>')[0];
+                popup_f500abcfe76a458c863db91f588be841.setContent(html_0508a0e9c77146059e6439fe0128ec3f);
+            
+
+            marker_6812c468eace4c3d8d02ccd57d0cc47c.bindPopup(popup_f500abcfe76a458c863db91f588be841)
+            ;
+
+            
+        
+    
+        var marker_4540647df1d84b3aa41c5a6f7b227070 = L.marker(
+            [33.982, -118.2564],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_be928ca808a04c319de09cbed0c65463);
+        
+    
+
+                var icon_c793d83b9b2043a29d9cff227975658b = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_4540647df1d84b3aa41c5a6f7b227070.setIcon(icon_c793d83b9b2043a29d9cff227975658b);
+            
+    
+            var popup_c42cabc75b244ccea37db406522ead51 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_9cbf5dcbb9034ccc8b61a48c27b2f1fc = $('<div id="html_9cbf5dcbb9034ccc8b61a48c27b2f1fc" style="width: 100.0%; height: 100.0%;">ASSAULT WITH DEADLY WEAPON, AGGRAVATED ASSAULT</div>')[0];
+                popup_c42cabc75b244ccea37db406522ead51.setContent(html_9cbf5dcbb9034ccc8b61a48c27b2f1fc);
+            
+
+            marker_4540647df1d84b3aa41c5a6f7b227070.bindPopup(popup_c42cabc75b244ccea37db406522ead51)
+            ;
+
+            
+        
+    
+        var marker_c7c7b54af1ea4621817c74d12e1b40e3 = L.marker(
+            [33.9894, -118.2456],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_be928ca808a04c319de09cbed0c65463);
+        
+    
+
+                var icon_5e2b5e7fd84343608aa9a98b28653d7f = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_c7c7b54af1ea4621817c74d12e1b40e3.setIcon(icon_5e2b5e7fd84343608aa9a98b28653d7f);
+            
+    
+            var popup_b9ffba0dc75e421c967c611c189c79a3 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_3289ac5367124a78815486f3f2c9bfc1 = $('<div id="html_3289ac5367124a78815486f3f2c9bfc1" style="width: 100.0%; height: 100.0%;">BATTERY - SIMPLE ASSAULT</div>')[0];
+                popup_b9ffba0dc75e421c967c611c189c79a3.setContent(html_3289ac5367124a78815486f3f2c9bfc1);
+            
+
+            marker_c7c7b54af1ea4621817c74d12e1b40e3.bindPopup(popup_b9ffba0dc75e421c967c611c189c79a3)
+            ;
+
+            
+        
+    
+        var marker_cf28911efdcc485faf3209da95981d2e = L.marker(
+            [33.9857, -118.2628],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_be928ca808a04c319de09cbed0c65463);
+        
+    
+
+                var icon_327791a5270e4976b866d06abc594329 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_cf28911efdcc485faf3209da95981d2e.setIcon(icon_327791a5270e4976b866d06abc594329);
+            
+    
+            var popup_a950383da54848e79f08d42efac708b4 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_ef38e2b56a214270933765fa3df88ba7 = $('<div id="html_ef38e2b56a214270933765fa3df88ba7" style="width: 100.0%; height: 100.0%;">ASSAULT WITH DEADLY WEAPON, AGGRAVATED ASSAULT</div>')[0];
+                popup_a950383da54848e79f08d42efac708b4.setContent(html_ef38e2b56a214270933765fa3df88ba7);
+            
+
+            marker_cf28911efdcc485faf3209da95981d2e.bindPopup(popup_a950383da54848e79f08d42efac708b4)
+            ;
+
+            
+        
+    
+        var marker_65d34b31d0ba46d6a22cd7e8b0dd4a88 = L.marker(
+            [33.982, -118.2614],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_be928ca808a04c319de09cbed0c65463);
+        
+    
+
+                var icon_128869a87b0f4cadb3190f6c1a74ab9d = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_65d34b31d0ba46d6a22cd7e8b0dd4a88.setIcon(icon_128869a87b0f4cadb3190f6c1a74ab9d);
+            
+    
+            var popup_afe5e4dd6822496fa4f79ed83b77e968 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_70a4832731ba49e3b27916a537b20d80 = $('<div id="html_70a4832731ba49e3b27916a537b20d80" style="width: 100.0%; height: 100.0%;">BATTERY - SIMPLE ASSAULT</div>')[0];
+                popup_afe5e4dd6822496fa4f79ed83b77e968.setContent(html_70a4832731ba49e3b27916a537b20d80);
+            
+
+            marker_65d34b31d0ba46d6a22cd7e8b0dd4a88.bindPopup(popup_afe5e4dd6822496fa4f79ed83b77e968)
+            ;
+
+            
+        
+    
+        var marker_971b93a103774291a726c2f6d0bf8f82 = L.marker(
+            [33.9748, -118.2564],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_be928ca808a04c319de09cbed0c65463);
+        
+    
+
+                var icon_77ed0de702a643f18eec86f906b4c2d0 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_971b93a103774291a726c2f6d0bf8f82.setIcon(icon_77ed0de702a643f18eec86f906b4c2d0);
+            
+    
+            var popup_d2f4f7e1e237468493945e204d2a506d = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_38e99c693b164e9f9138e08cceb3ee16 = $('<div id="html_38e99c693b164e9f9138e08cceb3ee16" style="width: 100.0%; height: 100.0%;">ASSAULT WITH DEADLY WEAPON, AGGRAVATED ASSAULT</div>')[0];
+                popup_d2f4f7e1e237468493945e204d2a506d.setContent(html_38e99c693b164e9f9138e08cceb3ee16);
+            
+
+            marker_971b93a103774291a726c2f6d0bf8f82.bindPopup(popup_d2f4f7e1e237468493945e204d2a506d)
+            ;
+
+            
+        
+    
+        var marker_7af329b3567f41289bc7111f40ae7af8 = L.marker(
+            [33.9857, -118.2628],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_be928ca808a04c319de09cbed0c65463);
+        
+    
+
+                var icon_26a0d72d36434fedb2790ad0dd33ba01 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_7af329b3567f41289bc7111f40ae7af8.setIcon(icon_26a0d72d36434fedb2790ad0dd33ba01);
+            
+    
+            var popup_627b23020c7f4084931713f24ebbf2d4 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_44e18b00b08e489ab3cdd63f53042590 = $('<div id="html_44e18b00b08e489ab3cdd63f53042590" style="width: 100.0%; height: 100.0%;">ASSAULT WITH DEADLY WEAPON, AGGRAVATED ASSAULT</div>')[0];
+                popup_627b23020c7f4084931713f24ebbf2d4.setContent(html_44e18b00b08e489ab3cdd63f53042590);
+            
+
+            marker_7af329b3567f41289bc7111f40ae7af8.bindPopup(popup_627b23020c7f4084931713f24ebbf2d4)
+            ;
+
+            
+        
+    
+        var marker_ce352cd4252c4db7aaa5e66ce27bd735 = L.marker(
+            [33.9748, -118.2564],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_be928ca808a04c319de09cbed0c65463);
+        
+    
+
+                var icon_c0f945636fad461c96645ac6c137fba2 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_ce352cd4252c4db7aaa5e66ce27bd735.setIcon(icon_c0f945636fad461c96645ac6c137fba2);
+            
+    
+            var popup_87e970195bbb4b18abff367aa2d292d4 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_5864261d7a9747f2aa5a349ff85a4e71 = $('<div id="html_5864261d7a9747f2aa5a349ff85a4e71" style="width: 100.0%; height: 100.0%;">CRIMINAL HOMICIDE</div>')[0];
+                popup_87e970195bbb4b18abff367aa2d292d4.setContent(html_5864261d7a9747f2aa5a349ff85a4e71);
+            
+
+            marker_ce352cd4252c4db7aaa5e66ce27bd735.bindPopup(popup_87e970195bbb4b18abff367aa2d292d4)
+            ;
+
+            
+        
+    
+        var marker_f5de202ad6a44306a3f5e2ea12b6a724 = L.marker(
+            [33.9748, -118.2564],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_be928ca808a04c319de09cbed0c65463);
+        
+    
+
+                var icon_4165146b65434f889c13472f9ec3a952 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_f5de202ad6a44306a3f5e2ea12b6a724.setIcon(icon_4165146b65434f889c13472f9ec3a952);
+            
+    
+            var popup_0ac449bd731246cc87d1c8d1fdb1601b = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_f798d25f051f42539c29935666f913cc = $('<div id="html_f798d25f051f42539c29935666f913cc" style="width: 100.0%; height: 100.0%;">ASSAULT WITH DEADLY WEAPON, AGGRAVATED ASSAULT</div>')[0];
+                popup_0ac449bd731246cc87d1c8d1fdb1601b.setContent(html_f798d25f051f42539c29935666f913cc);
+            
+
+            marker_f5de202ad6a44306a3f5e2ea12b6a724.bindPopup(popup_0ac449bd731246cc87d1c8d1fdb1601b)
+            ;
+
+            
+        
+    
+        var marker_117520c9797a48888f1b64bd0481cf14 = L.marker(
+            [33.9748, -118.2564],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_be928ca808a04c319de09cbed0c65463);
+        
+    
+
+                var icon_31cbb2c714a344a2b82daae44d19e83a = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_117520c9797a48888f1b64bd0481cf14.setIcon(icon_31cbb2c714a344a2b82daae44d19e83a);
+            
+    
+            var popup_670b15d7f31a4eeaa58740f3a49cafe2 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_e4c05f9a6fcf46f6b707e322b0c72afa = $('<div id="html_e4c05f9a6fcf46f6b707e322b0c72afa" style="width: 100.0%; height: 100.0%;">ASSAULT WITH DEADLY WEAPON, AGGRAVATED ASSAULT</div>')[0];
+                popup_670b15d7f31a4eeaa58740f3a49cafe2.setContent(html_e4c05f9a6fcf46f6b707e322b0c72afa);
+            
+
+            marker_117520c9797a48888f1b64bd0481cf14.bindPopup(popup_670b15d7f31a4eeaa58740f3a49cafe2)
+            ;
+
+            
+        
+    
+        var marker_9caf7b83f2024708b220c947ad490592 = L.marker(
+            [33.9857, -118.2628],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_be928ca808a04c319de09cbed0c65463);
+        
+    
+
+                var icon_e666262a7a9f46e79b6a46e5a3f964e0 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_9caf7b83f2024708b220c947ad490592.setIcon(icon_e666262a7a9f46e79b6a46e5a3f964e0);
+            
+    
+            var popup_e2d2fef7b79a470084305b7a9c92fd32 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_1d1e3425b5c1456588361bf9a846ae3b = $('<div id="html_1d1e3425b5c1456588361bf9a846ae3b" style="width: 100.0%; height: 100.0%;">BATTERY WITH SEXUAL CONTACT</div>')[0];
+                popup_e2d2fef7b79a470084305b7a9c92fd32.setContent(html_1d1e3425b5c1456588361bf9a846ae3b);
+            
+
+            marker_9caf7b83f2024708b220c947ad490592.bindPopup(popup_e2d2fef7b79a470084305b7a9c92fd32)
+            ;
+
+            
+        
+</script>
