@@ -1,6 +1,6 @@
 # Analysis-of-Violent-Crime-in-LA---Project
 --------------------------------------------------------
-The technical requirements for Project 1 are as follows
+The technical requirements for the project:
 --------------------------------------------------------
 
 Use Pandas to clean and format your data set(s)
